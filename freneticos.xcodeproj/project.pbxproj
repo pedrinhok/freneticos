@@ -14,6 +14,8 @@
 		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
+		E9E297842106199F00182BCA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E297832106199F00182BCA /* SigninViewController.swift */; };
+		E9E2978721061AF400182BCA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2978621061AF400182BCA /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E297832106199F00182BCA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		E9E2978621061AF400182BCA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +87,22 @@
 				E9C74DC0210613CD00EF770E /* AppDelegate.swift */,
 				E9C74DC2210613CD00EF770E /* ViewController.swift */,
 				E9C74DC4210613CD00EF770E /* Main.storyboard */,
+				E9E297832106199F00182BCA /* SigninViewController.swift */,
 				E9C74DCA210613CE00EF770E /* Assets.xcassets */,
 				E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */,
 				E9C74DCF210613CE00EF770E /* Info.plist */,
 				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
+				E9E2978521061ABD00182BCA /* services */,
 			);
 			path = freneticos;
+			sourceTree = "<group>";
+		};
+		E9E2978521061ABD00182BCA /* services */ = {
+			isa = PBXGroup;
+			children = (
+				E9E2978621061AF400182BCA /* UserService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E297842106199F00182BCA /* SigninViewController.swift in Sources */,
+				E9E2978721061AF400182BCA /* UserService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
 				E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */,
