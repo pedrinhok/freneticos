@@ -11,6 +11,7 @@
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
 		E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2421063C780058F4CC /* RoundedView.swift */; };
+		E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F26210645690058F4CC /* SignupViewController.swift */; };
 		E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC0210613CD00EF770E /* AppDelegate.swift */; };
 		E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC2210613CD00EF770E /* ViewController.swift */; };
 		E9C74DC6210613CD00EF770E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DC4210613CD00EF770E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		E9AC4F2421063C780058F4CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		E9AC4F26210645690058F4CC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		E9C74DBD210613CD00EF770E /* freneticos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freneticos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C74DC0210613CD00EF770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C74DC2210613CD00EF770E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E9C74DC2210613CD00EF770E /* ViewController.swift */,
 				E9C74DC4210613CD00EF770E /* Main.storyboard */,
 				E9E297832106199F00182BCA /* SigninViewController.swift */,
+				E9AC4F26210645690058F4CC /* SignupViewController.swift */,
 				E9C74DCA210613CE00EF770E /* Assets.xcassets */,
 				E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */,
 				E9C74DCF210613CE00EF770E /* Info.plist */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */,
 				E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */,
 				E9E297842106199F00182BCA /* SigninViewController.swift in Sources */,
 				E9E2978721061AF400182BCA /* UserService.swift in Sources */,
