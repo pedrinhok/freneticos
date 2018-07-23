@@ -113,6 +113,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSingin:" destination="ceY-m8-kBH" eventType="touchUpInside" id="xlN-zf-GAY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfJ-G5-zGo" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="386" width="304" height="35"/>
@@ -131,6 +134,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSingup:" destination="ceY-m8-kBH" eventType="touchUpInside" id="Vi4-i5-ZHb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -161,6 +167,8 @@
                         <viewLayoutGuide key="safeArea" id="6NW-B2-7z2"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="jKo-5P-L0s" id="RN5-1y-W62"/>
+                        <outlet property="password" destination="h3r-Wx-3OC" id="Ni5-xD-Jcf"/>
                         <segue destination="ihd-xj-4la" kind="show" identifier="gotoSignup" id="t7z-Sc-aWp"/>
                     </connections>
                 </viewController>
@@ -326,6 +334,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSignup:" destination="ihd-xj-4la" eventType="touchUpInside" id="LDj-rF-zTE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdA-MG-KeL" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="505" width="304" height="35"/>
@@ -344,6 +355,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSignin:" destination="ihd-xj-4la" eventType="touchUpInside" id="N03-6t-8fU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -382,8 +396,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gbj-d3-ReO"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="5yT-Vf-By2" id="CoQ-do-FXW"/>
+                        <outlet property="email" destination="22g-8I-xMk" id="9SA-UD-cj4"/>
+                        <outlet property="name" destination="oN6-ch-0Df" id="pLz-i5-zO7"/>
+                        <outlet property="password" destination="EoL-dh-mUE" id="tS6-7J-Cv3"/>
+                        <outlet property="phone" destination="4Dg-HB-oWL" id="gyF-83-9lu"/>
+                        <segue destination="8J2-2b-AcU" kind="unwind" identifier="unwindSignin" unwindAction="unwindSigninWithSegue:" id="TAd-0i-zyN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzb-IB-RfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8J2-2b-AcU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2460" y="58"/>
         </scene>
