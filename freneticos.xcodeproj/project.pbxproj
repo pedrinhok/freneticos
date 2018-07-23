@@ -14,6 +14,7 @@
 		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
+		E9DE85C021061E2800BD0393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9DE85BF21061E2800BD0393 /* GoogleService-Info.plist */; };
 		E9E297842106199F00182BCA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E297832106199F00182BCA /* SigninViewController.swift */; };
 		E9E2978721061AF400182BCA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2978621061AF400182BCA /* UserService.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DE85BF21061E2800BD0393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9E297832106199F00182BCA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		E9E2978621061AF400182BCA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				E9C74DCA210613CE00EF770E /* Assets.xcassets */,
 				E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */,
 				E9C74DCF210613CE00EF770E /* Info.plist */,
+				E9DE85BF21061E2800BD0393 /* GoogleService-Info.plist */,
 				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
 				E9E2978521061ABD00182BCA /* services */,
 			);
@@ -116,6 +119,7 @@
 				E9C74DB9210613CD00EF770E /* Sources */,
 				E9C74DBA210613CD00EF770E /* Frameworks */,
 				E9C74DBB210613CD00EF770E /* Resources */,
+				B6FB6DD35CF4A47CB5F25A06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */,
+				E9DE85C021061E2800BD0393 /* GoogleService-Info.plist in Resources */,
 				E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */,
 				E9C74DC6210613CD00EF770E /* Main.storyboard in Resources */,
 			);
@@ -173,6 +178,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B6FB6DD35CF4A47CB5F25A06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-freneticos/Pods-freneticos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-freneticos/Pods-freneticos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D13408E886F712775EB77517 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
