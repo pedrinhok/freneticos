@@ -410,5 +410,38 @@
             </objects>
             <point key="canvasLocation" x="2460" y="58"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="bX4-AV-lK6">
+            <objects>
+                <viewController title="Home" id="Yb7-5x-dQs" customClass="HomeViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OnN-KH-RDe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uO6-7t-S3I"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="po1-i3-2VL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WA0-wh-s3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460" y="830"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jN0-zV-aDA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OnF-HH-LPo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yb7-5x-dQs" kind="relationship" relationship="viewControllers" id="PWC-go-Rbc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rce-Sv-T3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.25" y="830.28169014084506"/>
+        </scene>
     </scenes>
 </document>
