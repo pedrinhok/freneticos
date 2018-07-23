@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A70422A6F63F83E6E68D59B /* Pods_freneticos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23530813664B76F55C220BEE /* Pods_freneticos.framework */; };
+		E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC42106A1C20085C83E /* ProfileViewController.swift */; };
+		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
 		E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992AE642106670A00AFB90F /* HomeViewController.swift */; };
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
@@ -28,6 +30,8 @@
 		23530813664B76F55C220BEE /* Pods_freneticos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freneticos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.debug.xcconfig"; sourceTree = "<group>"; };
 		7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.release.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.release.xcconfig"; sourceTree = "<group>"; };
+		E95B5AC42106A1C20085C83E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
 		E992AE642106670A00AFB90F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
@@ -75,6 +79,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E95B5AC12106A1410085C83E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9C74DC2210613CD00EF770E /* ViewController.swift */,
+				E9E297832106199F00182BCA /* SigninViewController.swift */,
+				E9AC4F26210645690058F4CC /* SignupViewController.swift */,
+				E95B5AC32106A1720085C83E /* profile */,
+				E95B5AC22106A1630085C83E /* mymatches */,
+				E992AE63210666A200AFB90F /* home */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		E95B5AC22106A1630085C83E /* mymatches */ = {
+			isa = PBXGroup;
+			children = (
+				E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */,
+			);
+			path = mymatches;
+			sourceTree = "<group>";
+		};
+		E95B5AC32106A1720085C83E /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				E95B5AC42106A1C20085C83E /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		E992AE63210666A200AFB90F /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,16 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				E9C74DC0210613CD00EF770E /* AppDelegate.swift */,
-				E9C74DC2210613CD00EF770E /* ViewController.swift */,
 				E9C74DC4210613CD00EF770E /* Main.storyboard */,
-				E9E297832106199F00182BCA /* SigninViewController.swift */,
-				E9AC4F26210645690058F4CC /* SignupViewController.swift */,
 				E9C74DCA210613CE00EF770E /* Assets.xcassets */,
 				E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */,
 				E9C74DCF210613CE00EF770E /* Info.plist */,
 				E9DE85BF21061E2800BD0393 /* GoogleService-Info.plist */,
 				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
-				E992AE63210666A200AFB90F /* home */,
+				E95B5AC12106A1410085C83E /* controllers */,
 				E9AC4F1F21063AAD0058F4CC /* layouts */,
 				E9E2978521061ABD00182BCA /* services */,
 			);
@@ -274,6 +304,8 @@
 				E9E2978721061AF400182BCA /* UserService.swift in Sources */,
 				E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */,
 				E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */,
+				E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */,
+				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
