@@ -1,0 +1,9 @@
+# xcode
+**/xcuserdata/
+**/freneticos.xcodeproj/xcuserdata/
+
+# pods dependencies
+**/Pods/
+
+# macosx
+**/.DS_Store
