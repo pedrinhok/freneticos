@@ -14,6 +14,10 @@ class SigninViewController: UIViewController {
         
         email.delegate = self
         password.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     // MARK: - action functions
@@ -25,6 +29,20 @@ class SigninViewController: UIViewController {
     
     @IBAction func clickSingup(_ sender: StandardButton) {
         performSegue(withIdentifier: "gotoSignup", sender: nil)
+    }
+    
+    // MARK: - selectors
+    
+    @objc func keyboardObserver(notification: NSNotification) {
+        guard let frame = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        
+        switch notification.name {
+        case Notification.Name.UIKeyboardWillShow, Notification.Name.UIKeyboardWillChangeFrame:
+            if view.frame.origin.y != 0 { return }
+            view.frame.origin.y = -frame.height
+        default:
+            view.frame.origin.y = 0
+        }
     }
     
 }
