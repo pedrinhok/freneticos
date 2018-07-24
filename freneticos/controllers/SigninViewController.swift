@@ -20,12 +20,33 @@ class SigninViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    // MARK: - functions
+    
+    func popup(title: String = "", message: String = "") {
+        let popup = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            popup.dismiss(animated: true)
+        }
+        popup.addAction(action)
+        
+        present(popup, animated: true)
+    }
+    
     // MARK: - action functions
     
     @IBAction func unwindSignin(segue: UIStoryboardSegue) {}
     
     @IBAction func clickSingin(_ sender: StandardButton) {
-        performSegue(withIdentifier: "gotoHome", sender: nil)
+        sender.inactive()
+        UserService.signin(email: email.text ?? "", password: password.text ?? "") { (error) in
+            if error != nil {
+                self.popup(title: "Ops", message: "Usuário não encontrado")
+            } else {
+                self.performSegue(withIdentifier: "gotoHome", sender: nil)
+            }
+            sender.active()
+        }
     }
     
     @IBAction func clickSingup(_ sender: StandardButton) {

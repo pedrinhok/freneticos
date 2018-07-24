@@ -42,6 +42,7 @@ class SignupViewController: UIViewController {
     // MARK: - action functions
     
     @IBAction func clickSignup(_ sender: StandardButton) {
+        sender.inactive()
         let user = User()
         
         guard let phone = phone.text, phone != "" else {
@@ -78,6 +79,7 @@ class SignupViewController: UIViewController {
             } else {
                 self.performSegue(withIdentifier: "gotoHome", sender: nil)
             }
+            sender.active()
         }
     }
     
