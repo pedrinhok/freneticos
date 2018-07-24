@@ -440,7 +440,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1uS-UT-Xlc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home" id="pDe-mi-8a8">
+                    <tabBarItem key="tabBarItem" title="" image="favorite" id="pDe-mi-8a8">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                 </viewController>
@@ -489,6 +489,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="favorite" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
     </resources>
 </document>
