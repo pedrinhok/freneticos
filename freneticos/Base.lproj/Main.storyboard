@@ -428,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA0-wh-s3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2603" y="1888"/>
+            <point key="canvasLocation" x="683" y="1888"/>
         </scene>
         <!--My Matches-->
         <scene sceneID="yiy-gu-sWw">
@@ -464,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgR-5w-pa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1888"/>
+            <point key="canvasLocation" x="2603" y="1888"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jN0-zV-aDA">
