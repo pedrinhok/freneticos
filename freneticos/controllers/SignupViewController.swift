@@ -74,9 +74,9 @@ class SignupViewController: UIViewController {
         
         UserService.create(user) { (error) in
             if let error = error {
-                print(error)
+                self.popup(title: "Ops", message: error)
             } else {
-                print("OK")
+                self.performSegue(withIdentifier: "gotoHome", sender: nil)
             }
         }
     }

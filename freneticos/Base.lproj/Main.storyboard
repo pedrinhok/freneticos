@@ -22,6 +22,7 @@
                     </view>
                     <connections>
                         <segue destination="ceY-m8-kBH" kind="show" identifier="gotoSignin" id="eW4-Fe-EDD"/>
+                        <segue destination="OnF-HH-LPo" kind="show" identifier="gotoHome" id="sxo-Z7-Ecm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -413,6 +414,7 @@
                         <outlet property="password" destination="EoL-dh-mUE" id="tS6-7J-Cv3"/>
                         <outlet property="phone" destination="4Dg-HB-oWL" id="gyF-83-9lu"/>
                         <segue destination="8J2-2b-AcU" kind="unwind" identifier="unwindSignin" unwindAction="unwindSigninWithSegue:" id="TAd-0i-zyN"/>
+                        <segue destination="OnF-HH-LPo" kind="show" identifier="gotoHome" id="f7i-7f-Mve"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzb-IB-RfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -502,4 +504,7 @@
         <image name="home" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f7i-7f-Mve"/>
+    </inferredMetricsTieBreakers>
 </document>
