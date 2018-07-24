@@ -25,6 +25,7 @@ class SigninViewController: UIViewController {
     @IBAction func unwindSignin(segue: UIStoryboardSegue) {}
     
     @IBAction func clickSingin(_ sender: StandardButton) {
+        performSegue(withIdentifier: "gotoHome", sender: nil)
     }
     
     @IBAction func clickSingup(_ sender: StandardButton) {
