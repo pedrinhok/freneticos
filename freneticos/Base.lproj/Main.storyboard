@@ -458,7 +458,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5U-Po-L7N"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home" id="ZcK-pM-tVo">
+                    <tabBarItem key="tabBarItem" title="" image="user" id="ZcK-pM-tVo">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                 </viewController>
@@ -491,5 +491,6 @@
     <resources>
         <image name="favorite" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
     </resources>
 </document>
