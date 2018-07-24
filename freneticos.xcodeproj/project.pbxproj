@@ -16,6 +16,7 @@
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
 		E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2421063C780058F4CC /* RoundedView.swift */; };
 		E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F26210645690058F4CC /* SignupViewController.swift */; };
+		E9B3A022210783CB00E44AC4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A021210783CB00E44AC4 /* User.swift */; };
 		E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC0210613CD00EF770E /* AppDelegate.swift */; };
 		E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC2210613CD00EF770E /* ViewController.swift */; };
 		E9C74DC6210613CD00EF770E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DC4210613CD00EF770E /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		E9AC4F2421063C780058F4CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		E9AC4F26210645690058F4CC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E9B3A021210783CB00E44AC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9C74DBD210613CD00EF770E /* freneticos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freneticos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C74DC0210613CD00EF770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C74DC2210613CD00EF770E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			path = layouts;
 			sourceTree = "<group>";
 		};
+		E9B3A0202107839B00E44AC4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E9B3A021210783CB00E44AC4 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		E9C74DB4210613CD00EF770E = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
 				E95B5AC12106A1410085C83E /* controllers */,
 				E9AC4F1F21063AAD0058F4CC /* layouts */,
+				E9B3A0202107839B00E44AC4 /* models */,
 				E9E2978521061ABD00182BCA /* services */,
 			);
 			path = freneticos;
@@ -247,6 +258,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-freneticos/Pods-freneticos-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -259,6 +271,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -298,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B3A022210783CB00E44AC4 /* User.swift in Sources */,
 				E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */,
 				E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */,
 				E9E297842106199F00182BCA /* SigninViewController.swift in Sources */,

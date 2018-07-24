@@ -7,6 +7,8 @@ class ViewController: UIViewController {
         
         if UserService.getCurrent() == nil {
             performSegue(withIdentifier: "gotoSignin", sender: nil)
+        } else {
+            performSegue(withIdentifier: "gotoSignin", sender: nil)
         }
     }
     

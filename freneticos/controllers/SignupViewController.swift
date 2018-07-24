@@ -26,9 +26,59 @@ class SignupViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    // MARK: - functions
+    
+    func popup(title: String = "", message: String = "") {
+        let popup = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            popup.dismiss(animated: true)
+        }
+        popup.addAction(action)
+        
+        present(popup, animated: true)
+    }
+    
     // MARK: - action functions
     
     @IBAction func clickSignup(_ sender: StandardButton) {
+        let user = User()
+        
+        guard let phone = phone.text, phone != "" else {
+            popup(title: "Ops", message: "O telefone deve ser preenchido")
+            return
+        }
+        user.phone = phone
+        
+        guard let name = name.text, name != "" else {
+            popup(title: "Ops", message: "O nome deve ser preenchido")
+            return
+        }
+        user.name = name
+        
+        guard let email = email.text, email != "" else {
+            popup(title: "Ops", message: "O email deve ser preenchido")
+            return
+        }
+        user.email = email
+        
+        guard let password = password.text, password != "" else {
+            popup(title: "Ops", message: "A senha deve ser preenchida")
+            return
+        }
+        guard let confirmPassword = confirmPassword.text, confirmPassword == password else {
+            popup(title: "Ops", message: "A senha não corresponde a confirmação")
+            return
+        }
+        user.password = password
+        
+        UserService.create(user) { (error) in
+            if let error = error {
+                print(error)
+            } else {
+                print("OK")
+            }
+        }
     }
     
     @IBAction func clickSignin(_ sender: StandardButton) {
