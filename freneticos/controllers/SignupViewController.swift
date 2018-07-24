@@ -47,28 +47,33 @@ class SignupViewController: UIViewController {
         
         guard let phone = phone.text, phone != "" else {
             popup(title: "Ops", message: "O telefone deve ser preenchido")
+            sender.active()
             return
         }
         user.phone = phone
         
         guard let name = name.text, name != "" else {
             popup(title: "Ops", message: "O nome deve ser preenchido")
+            sender.active()
             return
         }
         user.name = name
         
         guard let email = email.text, email != "" else {
             popup(title: "Ops", message: "O email deve ser preenchido")
+            sender.active()
             return
         }
         user.email = email
         
         guard let password = password.text, password != "" else {
             popup(title: "Ops", message: "A senha deve ser preenchida")
+            sender.active()
             return
         }
         guard let confirmPassword = confirmPassword.text, confirmPassword == password else {
             popup(title: "Ops", message: "A senha não corresponde a confirmação")
+            sender.active()
             return
         }
         user.password = password
