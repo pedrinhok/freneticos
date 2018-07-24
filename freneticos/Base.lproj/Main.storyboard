@@ -432,9 +432,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uO6-7t-S3I"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home" id="po1-i3-2VL">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="po1-i3-2VL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA0-wh-s3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,9 +448,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1uS-UT-Xlc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="favorite" id="pDe-mi-8a8">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="favorite" id="pDe-mi-8a8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qj8-9p-mlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -468,9 +464,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5U-Po-L7N"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="user" id="ZcK-pM-tVo">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="user" id="ZcK-pM-tVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgR-5w-pa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -481,7 +475,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OnF-HH-LPo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

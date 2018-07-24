@@ -16,6 +16,7 @@
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
 		E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2421063C780058F4CC /* RoundedView.swift */; };
 		E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F26210645690058F4CC /* SignupViewController.swift */; };
+		E9B038552107F28200B2888A /* StandardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B038542107F28200B2888A /* StandardTabBar.swift */; };
 		E9B3A022210783CB00E44AC4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A021210783CB00E44AC4 /* User.swift */; };
 		E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC0210613CD00EF770E /* AppDelegate.swift */; };
 		E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC2210613CD00EF770E /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		E9AC4F2421063C780058F4CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		E9AC4F26210645690058F4CC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E9B038542107F28200B2888A /* StandardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTabBar.swift; sourceTree = "<group>"; };
 		E9B3A021210783CB00E44AC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9C74DBD210613CD00EF770E /* freneticos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freneticos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C74DC0210613CD00EF770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				E9AC4F2021063B070058F4CC /* StandardTextField.swift */,
 				E9AC4F2221063B5A0058F4CC /* StandardButton.swift */,
 				E9AC4F2421063C780058F4CC /* RoundedView.swift */,
+				E9B038542107F28200B2888A /* StandardTabBar.swift */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
+				E9B038552107F28200B2888A /* StandardTabBar.swift in Sources */,
 				E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
