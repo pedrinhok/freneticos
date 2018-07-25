@@ -464,7 +464,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5U-Po-L7N"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="user" id="ZcK-pM-tVo"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="ZcK-pM-tVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgR-5w-pa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,9 +494,9 @@
     </scenes>
     <resources>
         <image name="background" width="1080" height="1920"/>
-        <image name="favorite" width="24" height="24"/>
-        <image name="home" width="24" height="24"/>
-        <image name="user" width="24" height="24"/>
+        <image name="favorite" width="36" height="36"/>
+        <image name="home" width="36" height="36"/>
+        <image name="profile" width="36" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f7i-7f-Mve"/>
