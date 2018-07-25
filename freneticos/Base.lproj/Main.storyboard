@@ -429,7 +429,18 @@
                     <view key="view" contentMode="scaleToFill" id="OnN-KH-RDe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="P5f-AB-4CJ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uO6-7t-S3I" firstAttribute="bottom" secondItem="P5f-AB-4CJ" secondAttribute="bottom" id="1TS-uU-OMA"/>
+                            <constraint firstItem="P5f-AB-4CJ" firstAttribute="leading" secondItem="uO6-7t-S3I" secondAttribute="leading" id="CLP-VF-p3S"/>
+                            <constraint firstItem="P5f-AB-4CJ" firstAttribute="top" secondItem="uO6-7t-S3I" secondAttribute="top" id="kes-0E-h0F"/>
+                            <constraint firstItem="uO6-7t-S3I" firstAttribute="trailing" secondItem="P5f-AB-4CJ" secondAttribute="trailing" id="yfn-97-L4q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uO6-7t-S3I"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="caA-fO-RwT">
@@ -441,6 +452,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="map" destination="P5f-AB-4CJ" id="oAd-9V-k75"/>
                         <segue destination="1BE-uc-vcf" kind="show" identifier="gotoNewMatch" id="tej-kA-OWl"/>
                     </connections>
                 </viewController>
