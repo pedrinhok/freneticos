@@ -14,6 +14,7 @@ class StandardTextField: UITextField {
     @IBInspectable
     var corner: CGFloat = 0 {
         didSet {
+            layer.masksToBounds = true
             layer.cornerRadius = corner
         }
     }
@@ -21,6 +22,7 @@ class StandardTextField: UITextField {
     @IBInspectable
     var borderWidth: CGFloat = 0 {
         didSet {
+            layer.masksToBounds = true
             layer.borderWidth = borderWidth
         }
     }
@@ -28,6 +30,7 @@ class StandardTextField: UITextField {
     @IBInspectable
     var borderColor: UIColor? {
         didSet {
+            layer.masksToBounds = true
             layer.borderColor = borderColor?.cgColor
         }
     }
