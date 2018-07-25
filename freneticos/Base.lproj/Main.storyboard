@@ -434,7 +434,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="caA-fO-RwT">
                         <barButtonItem key="backBarButtonItem" title=" " id="8fD-ka-re5"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-u9-eIa">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="add" id="EdA-u9-eIa">
                             <connections>
                                 <action selector="clickNewMatch:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
                             </connections>
@@ -501,7 +501,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OnF-HH-LPo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -538,6 +538,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="21" height="21"/>
         <image name="background" width="1080" height="1920"/>
         <image name="favorite" width="27" height="27"/>
         <image name="home" width="27" height="27"/>
