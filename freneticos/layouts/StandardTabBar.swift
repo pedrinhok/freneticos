@@ -5,6 +5,9 @@ class StandardTabBar: UITabBar {
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        itemPositioning = .centered
+        tintColor = UIColor(hexString: "#FF777A")
+        
         guard let items = items else { return }
         
         var space: CGFloat = 0.0

@@ -513,11 +513,10 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OnF-HH-LPo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="1" green="0.46666666666666667" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="lDW-bF-FCb" kind="relationship" relationship="viewControllers" id="PWC-go-Rbc"/>
@@ -535,7 +534,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDW-bF-FCb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="home" id="po1-i3-2VL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZ3-te-M03">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZ3-te-M03" customClass="StandardNavigationBar" customModule="freneticos" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
