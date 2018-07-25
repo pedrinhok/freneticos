@@ -2,6 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - cycle functions
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
