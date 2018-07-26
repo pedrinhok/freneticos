@@ -1,6 +1,6 @@
 import UIKit
 
-class NewMatchViewController: UIViewController {
+class CreateMatchViewController: UIViewController {
     
     // MARK: - outlets
     
@@ -33,7 +33,7 @@ class NewMatchViewController: UIViewController {
     
 }
 
-extension NewMatchViewController: UITextFieldDelegate {
+extension CreateMatchViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // drop keyboard on click return

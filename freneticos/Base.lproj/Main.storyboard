@@ -463,7 +463,7 @@
         <!--Create Match-->
         <scene sceneID="K9i-NZ-sga">
             <objects>
-                <viewController title="Create Match" id="1BE-uc-vcf" customClass="NewMatchViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Create Match" id="1BE-uc-vcf" customClass="CreateMatchViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Tw-fp-Uhh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

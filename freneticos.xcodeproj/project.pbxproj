@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A70422A6F63F83E6E68D59B /* Pods_freneticos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23530813664B76F55C220BEE /* Pods_freneticos.framework */; };
-		E91FEF692107FCB900618F15 /* NewMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* NewMatchViewController.swift */; };
+		E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */; };
 		E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC42106A1C20085C83E /* ProfileViewController.swift */; };
 		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
 		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
@@ -37,7 +37,7 @@
 		23530813664B76F55C220BEE /* Pods_freneticos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freneticos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.debug.xcconfig"; sourceTree = "<group>"; };
 		7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.release.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.release.xcconfig"; sourceTree = "<group>"; };
-		E91FEF682107FCB900618F15 /* NewMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchViewController.swift; sourceTree = "<group>"; };
+		E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
 		E95B5AC42106A1C20085C83E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
 		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E992AE642106670A00AFB90F /* HomeViewController.swift */,
-				E91FEF682107FCB900618F15 /* NewMatchViewController.swift */,
+				E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
-				E91FEF692107FCB900618F15 /* NewMatchViewController.swift in Sources */,
+				E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */,
 				E9BB604721090B5E00B990EC /* StandardNavigationBar.swift in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
 				E980B1312109FFD100A05F34 /* Subscriber.swift in Sources */,
