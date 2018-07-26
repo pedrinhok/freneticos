@@ -14,11 +14,13 @@ class CustomButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        if let iv = imageView, iv.image != nil {
-            imageEdgeInsets = UIEdgeInsets(top: 5, left: (bounds.width - 30), bottom: 5, right: 0)
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: iv.frame.width)
-        }
+        guard let v = imageView else { return }
+        v.image = UIImage(named: "arrow-right")
+        v.setImageColor(color: UIColor(hex: "#CCCCCC"))
+        imageEdgeInsets = UIEdgeInsets(top: 5, left: (bounds.width - 30), bottom: 5, right: 0)
+        titleEdgeInsets = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: v.frame.width)
         contentHorizontalAlignment = .left
+        setImage(v.image, for: .normal)
     }
     
     @IBInspectable
@@ -49,6 +51,16 @@ class CustomButton: UIButton {
         super.setTitle(title, for: state)
         
         setTitleColor(UIColor(hex: "#000000"), for: state)
+    }
+    
+}
+
+extension UIImageView {
+    
+    func setImageColor(color: UIColor) {
+        let temp = image?.withRenderingMode(.alwaysTemplate)
+        image = temp
+        tintColor = color
     }
     
 }
