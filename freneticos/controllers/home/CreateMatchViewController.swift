@@ -14,6 +14,8 @@ class CreateMatchViewController: UIViewController {
     @IBOutlet weak var price: StandardTextField!
     @IBOutlet weak var name: StandardTextField!
     @IBOutlet weak var desc: StandardTextField!
+    @IBOutlet weak var buttonLocation: CustomButton!
+    @IBOutlet weak var buttonSchedule: CustomButton!
     
     // MARK: - override
     
@@ -29,6 +31,17 @@ class CreateMatchViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let location = match.location {
+            buttonLocation.setTitle(location, for: .normal)
+        }
+        if let date = match.date, let hour = match.hour {
+            buttonSchedule.setTitle("\(date) \(hour)", for: .normal)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

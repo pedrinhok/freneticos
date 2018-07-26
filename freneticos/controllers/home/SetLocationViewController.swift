@@ -8,11 +8,13 @@ class SetLocationViewController: UIViewController {
     var locationManager = CLLocationManager()
     var geocoder = CLGeocoder()
     var match: Match!
+    var ann: MKPointAnnotation?
     
     // MARK: - outlets
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var name: StandardTextField!
+    @IBOutlet weak var placemark: UILabel!
     
     // MARK: - override
     
@@ -51,30 +53,53 @@ class SetLocationViewController: UIViewController {
     }
     
     func setAnnotation(coordinate: CLLocationCoordinate2D) {
+        ann = MKPointAnnotation()
+        ann!.coordinate = coordinate
         map.removeAnnotations(map.annotations)
-        let ann = MKPointAnnotation()
-        ann.coordinate = coordinate
-        map.addAnnotation(ann)
+        map.addAnnotation(ann!)
         
         let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
         geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
             guard let placemark = placemarks?.first else { return }
-            print("\(placemark.name ?? ""), \(placemark.locality ?? ""), \(placemark.administrativeArea ?? ""), \(placemark.country ?? "")")
+            
+            self.placemark.text = "\(placemark.name ?? ""), \(placemark.locality ?? ""), \(placemark.administrativeArea ?? ""), \(placemark.country ?? "")"
         }
+    }
+    
+    func popup(title: String = "", message: String = "") {
+        let popup = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            popup.dismiss(animated: true)
+        }
+        popup.addAction(action)
+        
+        present(popup, animated: true)
     }
     
     // MARK: - actions
     
-    @IBAction func clickSubmit(_ sender: StandardButton) {}
+    @IBAction func clickSubmit(_ sender: StandardButton) {
+        
+        guard let ann = ann else {
+            return popup(title: "Ops", message: "Clique no mapa para selecionar o local")
+        }
+        guard let name = name.text, name != "" else {
+            return popup(title: "Ops", message: "Informe um nome para o local")
+        }
+        
+        match.location = name
+        match.x = ann.coordinate.latitude
+        match.y = ann.coordinate.longitude
+        
+        performSegue(withIdentifier: "unwindCreateMatch", sender: nil)
+    }
     
     // MARK: - selectors
     
     @objc func mapObserver(tap: UITapGestureRecognizer) {
         let position = tap.location(in: map)
         let coordinate = map.convert(position, toCoordinateFrom: map)
-        
-        match.x = coordinate.latitude
-        match.y = coordinate.longitude
         
         setAnnotation(coordinate: coordinate)
     }
@@ -87,19 +112,6 @@ class SetLocationViewController: UIViewController {
         } else {
             view.frame.origin.y = 0
         }
-    }
-    
-}
-
-extension SetLocationViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations[0] as CLLocation
-        
-        let span = MKCoordinateSpanMake(0.008, 0.008)
-        let region = MKCoordinateRegion(center: location.coordinate, span: span)
-        map.setRegion(region, animated: true)
-        map.showsUserLocation = true
     }
     
 }
