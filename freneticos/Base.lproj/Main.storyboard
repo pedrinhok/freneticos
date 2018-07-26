@@ -445,7 +445,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="caA-fO-RwT">
                         <barButtonItem key="backBarButtonItem" title=" " id="8fD-ka-re5"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-u9-eIa">
+                        <barButtonItem key="rightBarButtonItem" image="add" id="EdA-u9-eIa">
                             <connections>
                                 <action selector="clickNewMatch:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
                             </connections>
@@ -860,6 +860,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="18" height="18"/>
         <image name="background" width="1080" height="1920"/>
         <image name="home" width="27" height="27"/>
         <image name="star" width="27" height="27"/>
