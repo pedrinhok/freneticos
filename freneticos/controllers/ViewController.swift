@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // MARK: - cycle functions
+    // MARK: - lifecycle
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
     
-    // MARK: - cycle functions
+    // MARK: - lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         locationManager.startUpdatingLocation()
     }
     
-    // MARK: - action functions
+    // MARK: - actions
     
     @IBAction func unwindHome(segue: UIStoryboardSegue) {}
     

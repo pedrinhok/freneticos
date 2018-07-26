@@ -11,10 +11,16 @@ class CreateMatchViewController: UIViewController {
     @IBOutlet weak var name: StandardTextField!
     @IBOutlet weak var desc: StandardTextField!
     
-    // MARK: - cycle functions
+    // MARK: - lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sport.delegate = self
+        positions.delegate = self
+        price.delegate = self
+        name.delegate = self
+        desc.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)

@@ -7,7 +7,7 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var email: StandardTextField!
     @IBOutlet weak var password: StandardTextField!
     
-    // MARK: - cycle functions
+    // MARK: - lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class SigninViewController: UIViewController {
         present(popup, animated: true)
     }
     
-    // MARK: - action functions
+    // MARK: - actions
     
     @IBAction func unwindSignin(segue: UIStoryboardSegue) {}
     

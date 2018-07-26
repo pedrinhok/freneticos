@@ -10,7 +10,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password: StandardTextField!
     @IBOutlet weak var confirmPassword: StandardTextField!
     
-    // MARK: - cycle functions
+    // MARK: - lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class SignupViewController: UIViewController {
         present(popup, animated: true)
     }
     
-    // MARK: - action functions
+    // MARK: - actions
     
     @IBAction func clickSignup(_ sender: StandardButton) {
         sender.inactive()
