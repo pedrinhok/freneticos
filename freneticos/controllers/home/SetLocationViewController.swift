@@ -13,7 +13,7 @@ class SetLocationViewController: UIViewController {
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var name: StandardTextField!
     
-    // MARK: - lifecycle
+    // MARK: - override
     
     override func viewDidLoad() {
         super.viewDidLoad()

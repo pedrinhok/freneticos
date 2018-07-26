@@ -10,7 +10,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password: StandardTextField!
     @IBOutlet weak var confirmPassword: StandardTextField!
     
-    // MARK: - lifecycle
+    // MARK: - override
     
     override func viewDidLoad() {
         super.viewDidLoad()

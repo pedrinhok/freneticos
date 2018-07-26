@@ -7,7 +7,7 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var email: StandardTextField!
     @IBOutlet weak var password: StandardTextField!
     
-    // MARK: - lifecycle
+    // MARK: - override
     
     override func viewDidLoad() {
         super.viewDidLoad()

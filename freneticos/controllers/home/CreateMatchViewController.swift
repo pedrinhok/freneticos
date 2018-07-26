@@ -15,7 +15,7 @@ class CreateMatchViewController: UIViewController {
     @IBOutlet weak var name: StandardTextField!
     @IBOutlet weak var desc: StandardTextField!
     
-    // MARK: - lifecycle
+    // MARK: - override
     
     override func viewDidLoad() {
         super.viewDidLoad()

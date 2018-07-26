@@ -11,7 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
     
-    // MARK: - lifecycle
+    // MARK: - override
     
     override func viewDidLoad() {
         super.viewDidLoad()
