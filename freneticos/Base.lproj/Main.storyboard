@@ -445,7 +445,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="caA-fO-RwT">
                         <barButtonItem key="backBarButtonItem" title=" " id="8fD-ka-re5"/>
-                        <barButtonItem key="rightBarButtonItem" image="add" id="EdA-u9-eIa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-u9-eIa">
                             <connections>
                                 <action selector="clickNewMatch:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
                             </connections>
@@ -530,7 +530,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="clickLocation:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JbC-be-fs9"/>
+                                                    <action selector="clickSetLocation:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JbC-be-fs9"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDAMENTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKV-x1-WJv">
@@ -560,7 +560,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="clickSchedule:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JY7-mg-XHE"/>
+                                                    <action selector="clickSetSchedule:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JY7-mg-XHE"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAGAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-ff-EIy">
@@ -697,7 +697,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="clickSingin:" destination="ceY-m8-kBH" eventType="touchUpInside" id="DNg-1n-z6T"/>
                                                     <action selector="clickSubmit:" destination="1BE-uc-vcf" eventType="touchUpInside" id="uxH-LB-cvf"/>
                                                 </connections>
                                             </button>
@@ -771,7 +770,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bdY-2R-FpG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Organizar partida" id="na1-jH-yP3"/>
+                    <navigationItem key="navigationItem" title="Organizar partida" id="na1-jH-yP3">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ZdM-dy-2A4"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="650"/>
                     <connections>
@@ -781,11 +782,104 @@
                         <outlet property="price" destination="hyK-IX-46l" id="EN8-Fp-yD9"/>
                         <outlet property="scroll" destination="BYe-kV-UFh" id="NXy-DU-TCy"/>
                         <outlet property="sport" destination="1z0-BH-FGf" id="Miz-Xx-Qke"/>
+                        <segue destination="cIx-nS-gjs" kind="show" identifier="gotoSetLocation" id="4Zc-QT-4CR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeG-99-7Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="683" y="3549"/>
+        </scene>
+        <!--Set Location View Controller-->
+        <scene sceneID="As5-hp-MKZ">
+            <objects>
+                <viewController id="cIx-nS-gjs" customClass="SetLocationViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DT0-cZ-5S2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnf-UG-rgm">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3An-Zu-8YQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
+                                    </mapView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para o local" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7D-kt-Fj8" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="346" width="304" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Rqv-cI-8m5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-bg-JEn" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="396" width="304" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Cr0-aB-j3M"/>
+                                        </constraints>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickSubmit:" destination="cIx-nS-gjs" eventType="touchUpInside" id="xBQ-NV-Xhk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="I7D-kt-Fj8" secondAttribute="trailing" constant="8" id="9TQ-RX-AzL"/>
+                                    <constraint firstAttribute="trailing" secondItem="3An-Zu-8YQ" secondAttribute="trailing" id="F8q-bi-Wuw"/>
+                                    <constraint firstItem="I7D-kt-Fj8" firstAttribute="leading" secondItem="Xnf-UG-rgm" secondAttribute="leading" constant="8" id="FkN-Lg-K9q"/>
+                                    <constraint firstItem="3An-Zu-8YQ" firstAttribute="top" secondItem="Xnf-UG-rgm" secondAttribute="top" id="MSb-z5-o0G"/>
+                                    <constraint firstAttribute="trailing" secondItem="c4f-bg-JEn" secondAttribute="trailing" constant="8" id="Ng7-MW-DMR"/>
+                                    <constraint firstItem="I7D-kt-Fj8" firstAttribute="top" secondItem="3An-Zu-8YQ" secondAttribute="bottom" constant="8" id="SmE-GM-pmK"/>
+                                    <constraint firstItem="3An-Zu-8YQ" firstAttribute="leading" secondItem="Xnf-UG-rgm" secondAttribute="leading" id="VQh-Gd-9io"/>
+                                    <constraint firstItem="c4f-bg-JEn" firstAttribute="leading" secondItem="Xnf-UG-rgm" secondAttribute="leading" constant="8" id="anM-VS-1Bv"/>
+                                    <constraint firstItem="c4f-bg-JEn" firstAttribute="top" secondItem="I7D-kt-Fj8" secondAttribute="bottom" constant="8" id="fMB-8M-mRo"/>
+                                    <constraint firstAttribute="bottom" secondItem="c4f-bg-JEn" secondAttribute="bottom" constant="15" id="xzW-U5-CtG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xnf-UG-rgm" firstAttribute="top" secondItem="EAp-35-CKM" secondAttribute="top" id="bQY-3J-qdr"/>
+                            <constraint firstAttribute="trailing" secondItem="Xnf-UG-rgm" secondAttribute="trailing" id="bRP-nh-diB"/>
+                            <constraint firstItem="Xnf-UG-rgm" firstAttribute="leading" secondItem="EAp-35-CKM" secondAttribute="leading" id="bfI-O2-FWi"/>
+                            <constraint firstItem="EAp-35-CKM" firstAttribute="bottom" secondItem="Xnf-UG-rgm" secondAttribute="bottom" id="ifg-4f-CXA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAp-35-CKM"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="3An-Zu-8YQ" id="Rgn-uT-OPP"/>
+                        <outlet property="name" destination="I7D-kt-Fj8" id="szR-bV-8sL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F24-ff-suQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="4332"/>
         </scene>
         <!--My Matches-->
         <scene sceneID="yiy-gu-sWw">
@@ -860,7 +954,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="18" height="18"/>
         <image name="background" width="1080" height="1920"/>
         <image name="home" width="27" height="27"/>
         <image name="star" width="27" height="27"/>

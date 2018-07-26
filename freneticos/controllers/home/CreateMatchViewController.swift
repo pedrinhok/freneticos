@@ -2,6 +2,10 @@ import UIKit
 
 class CreateMatchViewController: UIViewController {
     
+    // MARK: - properties
+    
+    var match = Match()
+    
     // MARK: - outlets
     
     @IBOutlet weak var scroll: UIScrollView!
@@ -27,19 +31,36 @@ class CreateMatchViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+            
+        case "gotoSetLocation":
+            guard let vc = segue.destination as? SetLocationViewController else { return }
+            vc.match = match
+            return
+            
+        case .none, .some(_):
+            return
+        }
+    }
+    
     // MARK: - actions
     
-    @IBAction func clickLocation(_ sender: CustomButton) {}
+    @IBAction func unwindCreateMatch(segue: UIStoryboardSegue) {}
     
-    @IBAction func clickSchedule(_ sender: CustomButton) {}
+    @IBAction func clickSetLocation(_ sender: CustomButton) {
+        performSegue(withIdentifier: "gotoSetLocation", sender: nil)
+    }
+    
+    @IBAction func clickSetSchedule(_ sender: CustomButton) {}
     
     @IBAction func clickSubmit(_ sender: StandardButton) {}
     
     // MARK: - selectors
     
     @objc func keyboardObserver(notification: NSNotification) {
-        var frame: CGRect = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
-        frame = view.convert(frame, from: nil)
+        let frame: CGRect = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        
         var content: UIEdgeInsets = scroll.contentInset
         switch notification.name {
         case Notification.Name.UIKeyboardWillShow, Notification.Name.UIKeyboardWillChangeFrame:
