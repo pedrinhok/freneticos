@@ -5,6 +5,11 @@ class CreateMatchViewController: UIViewController {
     // MARK: - outlets
     
     @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var sport: StandardTextField!
+    @IBOutlet weak var positions: StandardTextField!
+    @IBOutlet weak var price: StandardTextField!
+    @IBOutlet weak var name: StandardTextField!
+    @IBOutlet weak var desc: StandardTextField!
     
     // MARK: - cycle functions
     
@@ -15,6 +20,14 @@ class CreateMatchViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    // MARK: - actions
+    
+    @IBAction func clickLocation(_ sender: CustomButton) {}
+    
+    @IBAction func clickSchedule(_ sender: CustomButton) {}
+    
+    @IBAction func clickSubmit(_ sender: StandardButton) {}
     
     // MARK: - selectors
     

@@ -529,6 +529,9 @@
                                                         <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickLocation:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JbC-be-fs9"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDAMENTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKV-x1-WJv">
                                                 <rect key="frame" x="8" y="167" width="304" height="18"/>
@@ -536,6 +539,30 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-FE-E3N" customClass="CustomButton" customModule="freneticos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="193" width="304" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="sd9-A9-dqI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Informe a data e o horário">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickSchedule:" destination="1BE-uc-vcf" eventType="touchUpInside" id="JY7-mg-XHE"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAGAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-ff-EIy">
                                                 <rect key="frame" x="8" y="243" width="148" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -671,28 +698,8 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="clickSingin:" destination="ceY-m8-kBH" eventType="touchUpInside" id="DNg-1n-z6T"/>
+                                                    <action selector="clickSubmit:" destination="1BE-uc-vcf" eventType="touchUpInside" id="uxH-LB-cvf"/>
                                                 </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-FE-E3N" customClass="CustomButton" customModule="freneticos" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="193" width="304" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="sd9-A9-dqI"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="Informe a data e o horário">
-                                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                                        <real key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -768,7 +775,12 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="650"/>
                     <connections>
+                        <outlet property="desc" destination="f2h-e1-6Rf" id="RvS-L3-bMQ"/>
+                        <outlet property="name" destination="V7h-aK-aq5" id="xHp-QU-cTc"/>
+                        <outlet property="positions" destination="MQP-e2-ahx" id="EOz-hN-8rY"/>
+                        <outlet property="price" destination="hyK-IX-46l" id="EN8-Fp-yD9"/>
                         <outlet property="scroll" destination="BYe-kV-UFh" id="NXy-DU-TCy"/>
+                        <outlet property="sport" destination="1z0-BH-FGf" id="Miz-Xx-Qke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeG-99-7Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
