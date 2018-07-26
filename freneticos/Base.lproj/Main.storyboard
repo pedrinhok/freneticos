@@ -536,29 +536,6 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-45-P1l" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="193" width="304" height="42"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="RmK-nY-Hz8"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                                        <real key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAGAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujs-ff-EIy">
                                                 <rect key="frame" x="8" y="243" width="148" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -696,13 +673,34 @@
                                                     <action selector="clickSingin:" destination="ceY-m8-kBH" eventType="touchUpInside" id="DNg-1n-z6T"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-FE-E3N" customClass="CustomButton" customModule="freneticos" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="193" width="304" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="sd9-A9-dqI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Informe a data e o horário">
+                                                    <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="f2h-e1-6Rf" secondAttribute="trailing" constant="8" id="1Um-I5-R1r"/>
-                                            <constraint firstAttribute="trailing" secondItem="YZz-45-P1l" secondAttribute="trailing" constant="8" id="3VY-9G-ecT"/>
                                             <constraint firstItem="iIg-fO-F4j" firstAttribute="top" secondItem="f2h-e1-6Rf" secondAttribute="bottom" constant="15" id="3yv-aM-cQn"/>
                                             <constraint firstItem="7PJ-fN-53O" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="6D5-lO-ux6"/>
+                                            <constraint firstItem="6Ln-FE-E3N" firstAttribute="top" secondItem="oKV-x1-WJv" secondAttribute="bottom" constant="8" id="6Hj-FA-8sD"/>
                                             <constraint firstItem="1z0-BH-FGf" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="8US-dq-nNA"/>
                                             <constraint firstAttribute="trailing" secondItem="V7h-aK-aq5" secondAttribute="trailing" constant="8" id="8pp-eT-zON"/>
                                             <constraint firstAttribute="trailing" secondItem="Mud-yt-Zpd" secondAttribute="trailing" constant="8" id="9F4-14-bMA"/>
@@ -723,25 +721,25 @@
                                             <constraint firstItem="Klq-PS-FnZ" firstAttribute="width" secondItem="ujs-ff-EIy" secondAttribute="width" id="TBM-Lb-jJv"/>
                                             <constraint firstItem="1z0-BH-FGf" firstAttribute="top" secondItem="c6d-kH-3to" secondAttribute="bottom" constant="8" id="Tb4-ym-bHk"/>
                                             <constraint firstAttribute="trailing" secondItem="oKV-x1-WJv" secondAttribute="trailing" constant="8" id="V0J-RI-CnW"/>
-                                            <constraint firstItem="YZz-45-P1l" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="V5a-IM-PZO"/>
                                             <constraint firstItem="hyK-IX-46l" firstAttribute="leading" secondItem="MQP-e2-ahx" secondAttribute="trailing" constant="8" id="VyP-21-Bww"/>
                                             <constraint firstAttribute="trailing" secondItem="7PJ-fN-53O" secondAttribute="trailing" constant="8" id="Y5D-hD-KR9"/>
+                                            <constraint firstItem="6Ln-FE-E3N" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="YoU-DD-Jcp"/>
                                             <constraint firstItem="hyK-IX-46l" firstAttribute="top" secondItem="Klq-PS-FnZ" secondAttribute="bottom" constant="8" id="a7p-DQ-0Ln"/>
+                                            <constraint firstItem="ujs-ff-EIy" firstAttribute="top" secondItem="6Ln-FE-E3N" secondAttribute="bottom" constant="8" id="ahB-0o-vMZ"/>
+                                            <constraint firstItem="Klq-PS-FnZ" firstAttribute="top" secondItem="6Ln-FE-E3N" secondAttribute="bottom" constant="8" id="blr-Fp-oMZ"/>
                                             <constraint firstItem="V7h-aK-aq5" firstAttribute="top" secondItem="7PJ-fN-53O" secondAttribute="bottom" constant="8" id="cma-fJ-fx6"/>
                                             <constraint firstItem="Klq-PS-FnZ" firstAttribute="leading" secondItem="ujs-ff-EIy" secondAttribute="trailing" constant="8" id="dcy-Ll-4YI"/>
                                             <constraint firstItem="c6d-kH-3to" firstAttribute="top" secondItem="V50-lk-cyl" secondAttribute="top" constant="15" id="er3-m3-k3k"/>
-                                            <constraint firstItem="ujs-ff-EIy" firstAttribute="top" secondItem="YZz-45-P1l" secondAttribute="bottom" constant="8" id="fiT-Sp-eCY"/>
-                                            <constraint firstItem="YZz-45-P1l" firstAttribute="top" secondItem="oKV-x1-WJv" secondAttribute="bottom" constant="8" id="gJR-dF-coe"/>
                                             <constraint firstItem="f2h-e1-6Rf" firstAttribute="top" secondItem="4lo-87-cJ4" secondAttribute="bottom" constant="8" id="iOb-AT-7JI"/>
                                             <constraint firstItem="iIg-fO-F4j" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="jZK-Bi-heF"/>
                                             <constraint firstAttribute="trailing" secondItem="iIg-fO-F4j" secondAttribute="trailing" constant="8" id="kp9-Sj-4ZT"/>
                                             <constraint firstItem="hyK-IX-46l" firstAttribute="width" secondItem="MQP-e2-ahx" secondAttribute="width" id="l3K-MF-Ah9"/>
-                                            <constraint firstItem="Klq-PS-FnZ" firstAttribute="top" secondItem="YZz-45-P1l" secondAttribute="bottom" constant="8" id="mYQ-LZ-NAh"/>
                                             <constraint firstAttribute="height" constant="537" id="mZz-gY-Z8Y"/>
                                             <constraint firstItem="V7h-aK-aq5" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="nfO-GE-I9L"/>
                                             <constraint firstItem="YHv-he-FAw" firstAttribute="top" secondItem="Mud-yt-Zpd" secondAttribute="bottom" constant="8" id="noo-aN-zGm"/>
                                             <constraint firstItem="4lo-87-cJ4" firstAttribute="top" secondItem="V7h-aK-aq5" secondAttribute="bottom" constant="8" id="pqe-J5-N40"/>
                                             <constraint firstItem="7PJ-fN-53O" firstAttribute="top" secondItem="MQP-e2-ahx" secondAttribute="bottom" constant="8" id="q1f-8h-JjD"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Ln-FE-E3N" secondAttribute="trailing" constant="8" id="qvT-4C-80T"/>
                                             <constraint firstItem="c6d-kH-3to" firstAttribute="leading" secondItem="V50-lk-cyl" secondAttribute="leading" constant="8" id="ufe-Hy-e3V"/>
                                             <constraint firstAttribute="trailing" secondItem="YHv-he-FAw" secondAttribute="trailing" constant="8" id="wBu-zZ-eYF"/>
                                             <constraint firstItem="oKV-x1-WJv" firstAttribute="top" secondItem="YHv-he-FAw" secondAttribute="bottom" constant="8" id="xdN-5s-MEs"/>
