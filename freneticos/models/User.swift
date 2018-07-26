@@ -8,8 +8,8 @@ class User: Codable {
     var email: String?
     var password: String?
     var gender: String?
-    var birthday: Date?
-    var height: Double?
+    var birthday: String?
+    var height: String?
     
     public static func decodeManagedUser(_ managed: ManagedUser?) -> User? {
         guard let managed = managed else {
