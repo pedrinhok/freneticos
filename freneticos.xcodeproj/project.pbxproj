@@ -11,6 +11,7 @@
 		E91FEF692107FCB900618F15 /* NewMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* NewMatchViewController.swift */; };
 		E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC42106A1C20085C83E /* ProfileViewController.swift */; };
 		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
+		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
 		E96DCFF52106A58600E58377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96DCFF42106A58600E58377 /* GoogleService-Info.plist */; };
 		E980B12F2109FE7D00A05F34 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Match.swift */; };
 		E980B1312109FFD100A05F34 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B1302109FFD100A05F34 /* Subscriber.swift */; };
@@ -39,6 +40,7 @@
 		E91FEF682107FCB900618F15 /* NewMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchViewController.swift; sourceTree = "<group>"; };
 		E95B5AC42106A1C20085C83E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
+		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E96DCFF42106A58600E58377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E980B12E2109FE7D00A05F34 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		E980B1302109FFD100A05F34 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E9AC4F2421063C780058F4CC /* RoundedView.swift */,
 				E9B038542107F28200B2888A /* StandardTabBar.swift */,
 				E9BB604621090B5E00B990EC /* StandardNavigationBar.swift */,
+				E962757B210A02400006E6D4 /* CustomButton.swift */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B3A022210783CB00E44AC4 /* User.swift in Sources */,
+				E962757C210A02400006E6D4 /* CustomButton.swift in Sources */,
 				E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */,
 				E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */,
 				E9E297842106199F00182BCA /* SigninViewController.swift in Sources */,

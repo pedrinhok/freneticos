@@ -6,7 +6,7 @@ class StandardTabBar: UITabBar {
         super.layoutSubviews()
         
         itemPositioning = .centered
-        tintColor = UIColor(hexString: "#FF777A")
+        tintColor = UIColor(hex: "#FF777A")
         
         guard let items = items else { return }
         
