@@ -445,7 +445,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="caA-fO-RwT">
                         <barButtonItem key="backBarButtonItem" title=" " id="8fD-ka-re5"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="add" id="EdA-u9-eIa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-u9-eIa">
                             <connections>
                                 <action selector="clickNewMatch:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
                             </connections>
@@ -797,7 +797,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1uS-UT-Xlc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="favorite" id="pDe-mi-8a8"/>
+                    <tabBarItem key="tabBarItem" title="" image="star" id="pDe-mi-8a8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qj8-9p-mlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -813,7 +813,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W5U-Po-L7N"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="profile" id="ZcK-pM-tVo"/>
+                    <tabBarItem key="tabBarItem" title="" image="user" id="ZcK-pM-tVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgR-5w-pa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -860,11 +860,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="21" height="21"/>
         <image name="background" width="1080" height="1920"/>
-        <image name="favorite" width="27" height="27"/>
         <image name="home" width="27" height="27"/>
-        <image name="profile" width="27" height="27"/>
+        <image name="star" width="27" height="27"/>
+        <image name="user" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f7i-7f-Mve"/>
