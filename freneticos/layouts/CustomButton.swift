@@ -54,13 +54,3 @@ class CustomButton: UIButton {
     }
     
 }
-
-extension UIImageView {
-    
-    func setImageColor(color: UIColor) {
-        let temp = image?.withRenderingMode(.alwaysTemplate)
-        image = temp
-        tintColor = color
-    }
-    
-}
