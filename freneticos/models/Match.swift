@@ -12,9 +12,16 @@ class Match: Codable {
     var y: Double?
     var date: String?
     var time: String?
-    var duration: String?
+    var duration: Int?
     var positions: Int?
     var price: Double?
     var subscribers: [Subscriber]?
+    
+    func durationString() -> String? {
+        guard let duration = duration else { return nil }
+        let m = (duration / 60) % 60
+        let h = (duration / 3600)
+        return ("\(h)h e \(m)min")
+    }
     
 }

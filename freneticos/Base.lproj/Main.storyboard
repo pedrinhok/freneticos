@@ -627,7 +627,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="345" width="304" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="GUv-YV-dt5"/>
@@ -656,7 +656,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="421" width="304" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="74y-3D-n8m"/>
@@ -940,7 +940,7 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione a data" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="34" width="304" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="wbU-4A-hDk"/>
@@ -1083,7 +1083,9 @@
                         <outlet property="date" destination="gIN-Vw-O6C" id="7Zo-ls-Uil"/>
                         <outlet property="dateKeyboard" destination="HCG-xt-ehf" id="pva-P3-JtN"/>
                         <outlet property="dateSelector" destination="KN3-DR-PR5" id="FhG-cU-pA2"/>
-                        <outlet property="duration" destination="zzJ-45-tX1" id="31R-dI-7BJ"/>
+                        <outlet property="durationKeyboard" destination="wWs-if-SZd" id="qTv-64-S71"/>
+                        <outlet property="durationSelector" destination="S8K-Io-eaj" id="mKX-bK-7gV"/>
+                        <outlet property="durationString" destination="zzJ-45-tX1" id="31R-dI-7BJ"/>
                         <outlet property="time" destination="fRi-Ts-67v" id="Z4n-qD-GBU"/>
                         <outlet property="timeKeyboard" destination="JI4-PR-wdV" id="jC0-Hc-1qQ"/>
                         <outlet property="timeSelector" destination="45M-tS-FrI" id="MxI-ne-auo"/>
@@ -1194,6 +1196,57 @@
                         <constraint firstItem="bXB-eH-sUy" firstAttribute="leading" secondItem="JI4-PR-wdV" secondAttribute="leading" constant="-2" id="y7c-vJ-JTA"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="bGM-hZ-awJ"/>
+                </view>
+                <view contentMode="scaleToFill" id="wWs-if-SZd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8K-Io-eaj">
+                            <rect key="frame" x="0.0" y="30" width="320" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="WYl-GY-l9y"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="-978296399.28494">
+                                <!--1970-01-01 03:00:00 +0000-->
+                            </date>
+                        </datePicker>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="RoundedView" customModule="freneticos" customModuleProvider="target">
+                            <rect key="frame" x="-2" y="0.0" width="320" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-qI-1Zi">
+                                    <rect key="frame" x="280" y="0.0" width="30" height="30"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="durationSubmit:" destination="IW4-n0-w1x" eventType="touchUpInside" id="0Oq-yn-chb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Txd-qI-1Zi" firstAttribute="centerY" secondItem="BUW-nz-d41" secondAttribute="centerY" id="O3R-2z-jCw"/>
+                                <constraint firstAttribute="trailing" secondItem="Txd-qI-1Zi" secondAttribute="trailing" constant="10" id="ahd-2x-c0L"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BUW-nz-d41" firstAttribute="leading" secondItem="7rf-g3-Rcr" secondAttribute="leading" constant="-2" id="94A-gf-cD3"/>
+                        <constraint firstItem="S8K-Io-eaj" firstAttribute="top" secondItem="BUW-nz-d41" secondAttribute="bottom" id="DEs-Vm-dHx"/>
+                        <constraint firstItem="BUW-nz-d41" firstAttribute="top" secondItem="7rf-g3-Rcr" secondAttribute="top" id="OoJ-Qz-C3J"/>
+                        <constraint firstItem="S8K-Io-eaj" firstAttribute="trailing" secondItem="7rf-g3-Rcr" secondAttribute="trailing" id="THT-jw-hRt"/>
+                        <constraint firstAttribute="bottom" secondItem="S8K-Io-eaj" secondAttribute="bottom" id="VCZ-oy-D5R"/>
+                        <constraint firstAttribute="trailing" secondItem="BUW-nz-d41" secondAttribute="trailing" constant="2" id="X8W-Zo-BlQ"/>
+                        <constraint firstItem="S8K-Io-eaj" firstAttribute="leading" secondItem="7rf-g3-Rcr" secondAttribute="leading" id="b0y-T3-oKg"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="7rf-g3-Rcr"/>
                 </view>
             </objects>
             <point key="canvasLocation" x="1012.5" y="4663.7323943661968"/>
