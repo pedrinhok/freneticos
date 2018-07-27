@@ -39,8 +39,8 @@ class CreateMatchViewController: UIViewController {
         if let location = match.location {
             buttonLocation.setTitle(location, for: .normal)
         }
-        if let date = match.date, let hour = match.hour {
-            buttonSchedule.setTitle("\(date) \(hour)", for: .normal)
+        if let date = match.date, let time = match.time {
+            buttonSchedule.setTitle("\(date) \(time)", for: .normal)
         }
     }
     
@@ -49,6 +49,11 @@ class CreateMatchViewController: UIViewController {
             
         case "gotoSetLocation":
             guard let vc = segue.destination as? SetLocationViewController else { return }
+            vc.match = match
+            return
+            
+        case "gotoSetSchedule":
+            guard let vc = segue.destination as? SetScheduleViewController else { return }
             vc.match = match
             return
             
@@ -65,7 +70,9 @@ class CreateMatchViewController: UIViewController {
         performSegue(withIdentifier: "gotoSetLocation", sender: nil)
     }
     
-    @IBAction func clickSetSchedule(_ sender: CustomButton) {}
+    @IBAction func clickSetSchedule(_ sender: CustomButton) {
+        performSegue(withIdentifier: "gotoSetSchedule", sender: nil)
+    }
     
     @IBAction func clickSubmit(_ sender: StandardButton) {}
     
