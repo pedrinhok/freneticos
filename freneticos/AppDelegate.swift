@@ -92,7 +92,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+extension String {
+    
+    func currency() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        let regex = try! NSRegularExpression(pattern: "[^0-9]", options: [])
+        let string = regex.stringByReplacingMatches(in: self, options: [], range: NSMakeRange(0, count), withTemplate: "")
+        let double = (string as NSString).doubleValue
+        let number = NSNumber(value: (double / 100))
+        
+        guard number != 0 as NSNumber else {
+            return ""
+        }
+        
+        return formatter.string(from: number)!
+    }
+    
+}
+
 extension UIColor {
+    
     convenience init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
@@ -110,6 +131,7 @@ extension UIColor {
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
+    
 }
 
 extension UIImageView {

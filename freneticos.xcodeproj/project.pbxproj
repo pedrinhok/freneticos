@@ -32,6 +32,7 @@
 		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
+		E9E07912210BC7B600D2A7FD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */; };
 		E9E297842106199F00182BCA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E297832106199F00182BCA /* SigninViewController.swift */; };
 		E9E2978721061AF400182BCA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2978621061AF400182BCA /* UserService.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		E9E297832106199F00182BCA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		E9E2978621061AF400182BCA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 				E9B038542107F28200B2888A /* StandardTabBar.swift */,
 				E9BB604621090B5E00B990EC /* StandardNavigationBar.swift */,
 				E962757B210A02400006E6D4 /* CustomButton.swift */,
+				E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				E962757C210A02400006E6D4 /* CustomButton.swift in Sources */,
 				E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */,
 				E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */,
+				E9E07912210BC7B600D2A7FD /* CurrencyTextField.swift in Sources */,
 				E9E297842106199F00182BCA /* SigninViewController.swift in Sources */,
 				E9E2978721061AF400182BCA /* UserService.swift in Sources */,
 				E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */,
