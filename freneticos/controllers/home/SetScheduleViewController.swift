@@ -52,6 +52,8 @@ class SetScheduleViewController: UIViewController {
         }
         if let duration = duration {
             durationSelector.countDownDuration = TimeInterval(duration)
+        } else {
+            durationSelector.countDownDuration = 3600
         }
     }
     
