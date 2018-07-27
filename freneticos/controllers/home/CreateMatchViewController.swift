@@ -62,6 +62,21 @@ class CreateMatchViewController: UIViewController {
         }
     }
     
+    // MARK: - functions
+    
+    func popup(title: String = "", message: String = "", completion: (() -> ())? = nil) {
+        let popup = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            popup.dismiss(animated: true)
+            guard let completion = completion else { return }
+            completion()
+        }
+        popup.addAction(action)
+        
+        present(popup, animated: true)
+    }
+    
     // MARK: - actions
     
     @IBAction func unwindCreateMatch(segue: UIStoryboardSegue) {}
@@ -74,7 +89,51 @@ class CreateMatchViewController: UIViewController {
         performSegue(withIdentifier: "gotoSetSchedule", sender: nil)
     }
     
-    @IBAction func clickSubmit(_ sender: StandardButton) {}
+    @IBAction func clickSubmit(_ sender: StandardButton) {
+        sender.inactive()
+        
+        if match.location == nil, match.x == nil, match.y == nil  {
+            sender.active()
+            return popup(title: "Ops", message: "Informe o local da partida")
+        }
+        if match.date == nil, match.time == nil, match.duration == nil  {
+            sender.active()
+            return popup(title: "Ops", message: "Informe a data e o horário da partida")
+        }
+        guard let positions = positions.text, positions != "" else {
+            sender.active()
+            return popup(title: "Ops", message: "Informe o número de vagas para a partida")
+        }
+        guard let price = price.text, price != "" else {
+            sender.active()
+            return popup(title: "Ops", message: "Informe o preço para os participantes")
+        }
+        guard let name = name.text, name != "" else {
+            sender.active()
+            return popup(title: "Ops", message: "Informe um nome para a partida")
+        }
+        guard let desc = desc.text, desc != "" else {
+            sender.active()
+            return popup(title: "Ops", message: "Informe uma descrição para a partida")
+        }
+        
+        match.positions = Int(positions)
+        match.price = Double(price)
+        match.name = name
+        match.desc = desc
+        
+        MatchService.create(match) { (error) in
+            if let error = error {
+                self.popup(title: "Ops", message: error)
+            } else {
+                self.popup(title: "Sucesso", message: "") {
+                    self.performSegue(withIdentifier: "unwindHome", sender: nil)
+                }
+            }
+            sender.active()
+        }
+        
+    }
     
     // MARK: - selectors
     

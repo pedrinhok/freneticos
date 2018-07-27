@@ -634,7 +634,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="corner">
                                                         <real key="value" value="3"/>
@@ -787,9 +787,11 @@
                         <outlet property="sport" destination="1z0-BH-FGf" id="Miz-Xx-Qke"/>
                         <segue destination="cIx-nS-gjs" kind="show" identifier="gotoSetLocation" id="4Zc-QT-4CR"/>
                         <segue destination="IW4-n0-w1x" kind="show" identifier="gotoSetSchedule" id="u7Q-Aw-UoX"/>
+                        <segue destination="isB-ro-HLa" kind="unwind" identifier="unwindHome" unwindAction="unwindHomeWithSegue:" id="P7R-0B-2cR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeG-99-7Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="isB-ro-HLa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="683" y="3549"/>
         </scene>

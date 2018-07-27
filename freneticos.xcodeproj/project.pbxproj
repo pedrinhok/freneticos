@@ -18,6 +18,7 @@
 		E980B12F2109FE7D00A05F34 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Match.swift */; };
 		E980B1312109FFD100A05F34 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B1302109FFD100A05F34 /* Subscriber.swift */; };
 		E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992AE642106670A00AFB90F /* HomeViewController.swift */; };
+		E99722CE210BB248008065B7 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99722CD210BB248008065B7 /* MatchService.swift */; };
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
 		E9AC4F2521063C780058F4CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2421063C780058F4CC /* RoundedView.swift */; };
@@ -49,6 +50,7 @@
 		E980B12E2109FE7D00A05F34 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		E980B1302109FFD100A05F34 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		E992AE642106670A00AFB90F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E99722CD210BB248008065B7 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		E9AC4F2421063C780058F4CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E2978621061AF400182BCA /* UserService.swift */,
+				E99722CD210BB248008065B7 /* MatchService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				E980B12F2109FE7D00A05F34 /* Match.swift in Sources */,
 				E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */,
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
+				E99722CE210BB248008065B7 /* MatchService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
 				E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */,
