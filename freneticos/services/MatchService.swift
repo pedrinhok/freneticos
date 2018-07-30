@@ -16,4 +16,19 @@ class MatchService {
         }
     }
     
+    public static func get(completion: @escaping ([Match]) -> ()) {
+        let request = db.collection("matches") as Query
+        
+        request.getDocuments() { (snapshot, error) in
+            if error != nil {
+                completion([])
+            } else {
+                for document in snapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+                completion([])
+            }
+        }
+    }
+    
 }

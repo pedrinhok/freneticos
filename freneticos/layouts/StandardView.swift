@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class RoundedView: UIView {
+class StandardView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -1120,7 +1120,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-op-OUf" customClass="RoundedView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-op-OUf" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puy-08-BUo">
@@ -1181,7 +1181,7 @@
                                 <!--2018-07-27 13:03:01 +0000-->
                             </date>
                         </datePicker>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXB-eH-sUy" customClass="RoundedView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXB-eH-sUy" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2he-vI-Yte">
@@ -1232,7 +1232,7 @@
                                 <!--1970-01-01 03:00:00 +0000-->
                             </date>
                         </datePicker>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="RoundedView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="320" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-qI-1Zi">
