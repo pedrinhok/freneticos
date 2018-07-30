@@ -4,7 +4,8 @@ class CreateMatchViewController: UIViewController {
     
     // MARK: - properties
     
-    var match = Match()
+    var match: Match = Match()
+    var sports: [String] = ["Basquete", "Corrida", "Futebol", "Tênis", "Volêi"]
     
     // MARK: - outlets
     
@@ -16,6 +17,8 @@ class CreateMatchViewController: UIViewController {
     @IBOutlet weak var desc: StandardTextField!
     @IBOutlet weak var buttonLocation: CustomButton!
     @IBOutlet weak var buttonSchedule: CustomButton!
+    @IBOutlet var sportKeyboard: UIView!
+    @IBOutlet weak var sportSelector: UIPickerView!
     
     // MARK: - override
     
@@ -27,6 +30,10 @@ class CreateMatchViewController: UIViewController {
         price.delegate = self
         name.delegate = self
         desc.delegate = self
+        
+        sport.inputView = sportKeyboard
+        sportSelector.dataSource = self
+        sportSelector.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardObserver), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
@@ -92,6 +99,10 @@ class CreateMatchViewController: UIViewController {
     @IBAction func clickSubmit(_ sender: StandardButton) {
         sender.inactive()
         
+        guard let sport = sport.text, sport != "" else {
+            sender.active()
+            return popup(title: "Ops", message: "Selecione o esporte da partida")
+        }
         if match.location == nil, match.x == nil, match.y == nil  {
             sender.active()
             return popup(title: "Ops", message: "Informe o local da partida")
@@ -112,15 +123,12 @@ class CreateMatchViewController: UIViewController {
             sender.active()
             return popup(title: "Ops", message: "Informe um nome para a partida")
         }
-        guard let desc = desc.text, desc != "" else {
-            sender.active()
-            return popup(title: "Ops", message: "Informe uma descrição para a partida")
-        }
         
+        match.sport = sport
         match.positions = Int(positions)
         match.price = Double(price)
         match.name = name
-        match.desc = desc
+        match.desc = desc.text
         
         MatchService.create(match) { (error) in
             if let error = error {
@@ -158,6 +166,27 @@ extension CreateMatchViewController: UITextFieldDelegate {
         // drop keyboard on click return
         textField.resignFirstResponder()
         return true
+    }
+    
+}
+
+extension CreateMatchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return sports.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return sports[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        sport.text = sports[row]
+        sport.resignFirstResponder()
     }
     
 }
