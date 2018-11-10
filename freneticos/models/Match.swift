@@ -10,8 +10,7 @@ class Match: Codable {
     var location: String?
     var x: Double?
     var y: Double?
-    var date: String?
-    var time: String?
+    var moment: String?
     var duration: Int?
     var positions: Int?
     var price: Double?

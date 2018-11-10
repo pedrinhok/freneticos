@@ -46,7 +46,7 @@ class CreateMatchViewController: UIViewController {
         if let location = match.location {
             buttonLocation.setTitle(location, for: .normal)
         }
-        if let moment = match.date {
+        if let moment = match.moment {
             buttonSchedule.setTitle("\(moment)", for: .normal)
         }
     }
@@ -107,7 +107,7 @@ class CreateMatchViewController: UIViewController {
             sender.active()
             return popup(title: "Ops", message: "Informe o local")
         }
-        if match.date == nil, match.duration == nil  {
+        if match.moment == nil, match.duration == nil  {
             sender.active()
             return popup(title: "Ops", message: "Informe a data e o horário")
         }

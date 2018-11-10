@@ -10,10 +10,10 @@ class SetScheduleViewController: UIViewController {
     
     // MARK: - outlets
     
-    @IBOutlet weak var date: StandardTextField!
+    @IBOutlet weak var moment: StandardTextField!
     @IBOutlet weak var durationString: StandardTextField!
-    @IBOutlet var dateKeyboard: UIView!
-    @IBOutlet weak var dateSelector: UIDatePicker!
+    @IBOutlet var momentKeyboard: UIView!
+    @IBOutlet weak var momentSelector: UIDatePicker!
     @IBOutlet var durationKeyboard: UIView!
     @IBOutlet weak var durationSelector: UIDatePicker!
     
@@ -22,7 +22,7 @@ class SetScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        date.text = match.date
+        moment.text = match.moment
         durationString.text = match.durationString()
         duration = match.duration
         
@@ -32,14 +32,14 @@ class SetScheduleViewController: UIViewController {
     // MARK: - functions
     
     func prepareKeyboards() {
-        date.inputView = dateKeyboard
+        moment.inputView = momentKeyboard
         durationString.inputView = durationKeyboard
         
-        dateSelector.minimumDate = Date()
+        momentSelector.minimumDate = Date()
         
-        if let date = match.date {
+        if let moment = match.moment {
             formatter.dateFormat = "dd/MM/yyyy HH:mm"
-            dateSelector.date = formatter.date(from: date)!
+            momentSelector.date = formatter.date(from: moment)!
         }
         if let duration = duration {
             durationSelector.countDownDuration = TimeInterval(duration)
@@ -63,23 +63,23 @@ class SetScheduleViewController: UIViewController {
     
     @IBAction func onClickSubmit(_ sender: StandardButton) {
         
-        guard let date = date.text, date != "" else {
+        guard let moment = moment.text, moment != "" else {
             return popup(title: "Ops", message: "Informe a data e o horário")
         }
         guard let duration = duration else {
             return popup(title: "Ops", message: "Informe a duração")
         }
         
-        match.date = date
+        match.moment = moment
         match.duration = duration
         
         performSegue(withIdentifier: "unwindCreateMatch", sender: nil)
     }
     
-    @IBAction func onSelectDate(_ sender: UIButton) {
+    @IBAction func onSelectMoment(_ sender: UIButton) {
         formatter.dateFormat = "dd/MM/yyyy HH:mm"
-        date.text = formatter.string(from: dateSelector.date)
-        date.resignFirstResponder()
+        moment.text = formatter.string(from: momentSelector.date)
+        moment.resignFirstResponder()
     }
     
     @IBAction func onSelectDuration(_ sender: UIButton) {
