@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -37,9 +37,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hBD-bQ-X44">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEN-3O-flv">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
@@ -100,7 +97,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abo-e0-aGY" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="317" width="304" height="44"/>
-                                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="bJB-hV-29C"/>
                                         </constraints>
@@ -159,14 +156,10 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6NW-B2-7z2" firstAttribute="bottom" secondItem="vEN-3O-flv" secondAttribute="bottom" id="0UZ-KI-Atx"/>
-                            <constraint firstItem="hBD-bQ-X44" firstAttribute="leading" secondItem="6NW-B2-7z2" secondAttribute="leading" id="7gR-Hk-oVt"/>
-                            <constraint firstItem="hBD-bQ-X44" firstAttribute="bottom" secondItem="6NW-B2-7z2" secondAttribute="bottom" id="Ejm-lq-35F"/>
-                            <constraint firstItem="hBD-bQ-X44" firstAttribute="trailing" secondItem="6NW-B2-7z2" secondAttribute="trailing" id="Nir-qG-GYs"/>
                             <constraint firstItem="vEN-3O-flv" firstAttribute="top" secondItem="6NW-B2-7z2" secondAttribute="top" id="Ygh-90-KbT"/>
-                            <constraint firstItem="hBD-bQ-X44" firstAttribute="top" secondItem="mCL-Ht-sOQ" secondAttribute="top" id="fnn-I8-Dsb"/>
                             <constraint firstItem="6NW-B2-7z2" firstAttribute="trailing" secondItem="vEN-3O-flv" secondAttribute="trailing" id="mOm-2q-tq9"/>
                             <constraint firstItem="vEN-3O-flv" firstAttribute="leading" secondItem="6NW-B2-7z2" secondAttribute="leading" id="w3i-Gr-OZS"/>
                         </constraints>
@@ -191,9 +184,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-en-Szu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-3K-Sfl">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
@@ -326,7 +316,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B0-ZI-A5d" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="457" width="304" height="44"/>
-                                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="rOh-LL-jAP"/>
                                         </constraints>
@@ -394,16 +384,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fjb-3K-Sfl" firstAttribute="trailing" secondItem="Gbj-d3-ReO" secondAttribute="trailing" id="6St-TL-7tw"/>
-                            <constraint firstItem="5h3-en-Szu" firstAttribute="bottom" secondItem="Gbj-d3-ReO" secondAttribute="bottom" id="IT0-eC-z0H"/>
-                            <constraint firstItem="5h3-en-Szu" firstAttribute="trailing" secondItem="Gbj-d3-ReO" secondAttribute="trailing" id="RWf-uV-fw4"/>
                             <constraint firstItem="Fjb-3K-Sfl" firstAttribute="bottom" secondItem="Gbj-d3-ReO" secondAttribute="bottom" id="SlJ-Y0-htp"/>
                             <constraint firstItem="Fjb-3K-Sfl" firstAttribute="leading" secondItem="Gbj-d3-ReO" secondAttribute="leading" id="TKq-1H-JSl"/>
-                            <constraint firstItem="5h3-en-Szu" firstAttribute="leading" secondItem="Gbj-d3-ReO" secondAttribute="leading" id="Zqh-M6-hwx"/>
                             <constraint firstItem="Fjb-3K-Sfl" firstAttribute="top" secondItem="Gbj-d3-ReO" secondAttribute="top" id="fC1-QS-nM0"/>
-                            <constraint firstItem="5h3-en-Szu" firstAttribute="top" secondItem="Q6H-y3-RJN" secondAttribute="top" id="kvG-8a-bam"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gbj-d3-ReO"/>
                     </view>
@@ -681,7 +667,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIg-fO-F4j" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="478" width="304" height="44"/>
-                                                <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="FJy-6p-A6Q"/>
                                                 </constraints>
@@ -846,10 +832,10 @@
             </objects>
             <point key="canvasLocation" x="683" y="3802"/>
         </scene>
-        <!--Organizar partida-->
+        <!--Set Location-->
         <scene sceneID="As5-hp-MKZ">
             <objects>
-                <viewController id="cIx-nS-gjs" customClass="SetLocationViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Set Location" id="cIx-nS-gjs" customClass="SetLocationViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DT0-cZ-5S2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -916,7 +902,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-bg-JEn" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="396" width="304" height="44"/>
-                                        <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Cr0-aB-j3M"/>
                                         </constraints>
@@ -977,10 +963,10 @@
             </objects>
             <point key="canvasLocation" x="330" y="4932"/>
         </scene>
-        <!--Organizar partida-->
+        <!--Set Schedule-->
         <scene sceneID="CD1-Co-Yb2">
             <objects>
-                <viewController id="IW4-n0-w1x" customClass="SetScheduleViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Set Schedule" id="IW4-n0-w1x" customClass="SetScheduleViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0y-8r-F1s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1077,7 +1063,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-UP-R6M" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="167" width="304" height="44"/>
-                                        <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="f7P-eU-pek"/>
                                         </constraints>
@@ -1325,7 +1311,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1080" height="1920"/>
         <image name="home" width="27" height="27"/>
         <image name="star" width="27" height="27"/>
         <image name="user" width="26" height="26"/>
