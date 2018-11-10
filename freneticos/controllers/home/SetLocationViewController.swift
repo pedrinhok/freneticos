@@ -79,7 +79,7 @@ class SetLocationViewController: UIViewController {
     
     // MARK: - actions
     
-    @IBAction func clickSubmit(_ sender: StandardButton) {
+    @IBAction func onClickSubmit(_ sender: StandardButton) {
         
         guard let ann = ann else {
             return popup(title: "Ops", message: "Clique no mapa para selecionar o local")

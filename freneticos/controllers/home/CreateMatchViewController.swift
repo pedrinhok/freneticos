@@ -5,7 +5,7 @@ class CreateMatchViewController: UIViewController {
     // MARK: - properties
     
     var match: Match = Match()
-    var sports: [String] = ["Basquete", "Corrida", "Futebol", "Tênis", "Volêi"]
+    var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Ginástica", "Golfe", "Futebol", "Futebol americano", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
     
     // MARK: - outlets
     
@@ -88,15 +88,15 @@ class CreateMatchViewController: UIViewController {
     
     @IBAction func unwindCreateMatch(segue: UIStoryboardSegue) {}
     
-    @IBAction func clickSetLocation(_ sender: CustomButton) {
+    @IBAction func gotoSetLocation(_ sender: CustomButton) {
         performSegue(withIdentifier: "gotoSetLocation", sender: nil)
     }
     
-    @IBAction func clickSetSchedule(_ sender: CustomButton) {
+    @IBAction func gotoSetSchedule(_ sender: CustomButton) {
         performSegue(withIdentifier: "gotoSetSchedule", sender: nil)
     }
     
-    @IBAction func clickSubmit(_ sender: StandardButton) {
+    @IBAction func onClickSubmit(_ sender: StandardButton) {
         sender.inactive()
         
         guard let sport = sport.text, sport != "" else {
@@ -131,16 +131,22 @@ class CreateMatchViewController: UIViewController {
         match.desc = desc.text
         
         MatchService.create(match) { (error) in
-            if let error = error {
-                self.popup(title: "Ops", message: error)
+            if error != nil {
+                self.popup(title: "Ops", message: "Ocorreu um erro, tente novamente")
             } else {
-                self.popup(title: "Sucesso", message: "") {
+                self.popup(title: "Sucesso", message: "Partida organizada com sucesso") {
                     self.performSegue(withIdentifier: "unwindHome", sender: nil)
                 }
             }
             sender.active()
         }
         
+    }
+    
+    @IBAction func onSelectSport(_ sender: UIButton) {
+        let row = sportSelector.selectedRow(inComponent: 0)
+        sport.text = sports[row]
+        sport.resignFirstResponder()
     }
     
     // MARK: - selectors
@@ -182,11 +188,6 @@ extension CreateMatchViewController: UIPickerViewDataSource, UIPickerViewDelegat
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return sports[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        sport.text = sports[row]
-        sport.resignFirstResponder()
     }
     
 }

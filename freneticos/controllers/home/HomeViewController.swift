@@ -23,11 +23,31 @@ class HomeViewController: UIViewController {
         locationManager.startUpdatingLocation()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getMatches()
+    }
+    
+    // MARK: - functions
+    
+    func getMatches() {
+        MatchService.get { (matches) in
+            var annotations: [Annotation] = []
+            for match in matches {
+                guard let x = match.x, let y = match.y else { continue }
+                let annotation = Annotation(match, x: CLLocationDegrees(x), y: CLLocationDegrees(y))
+                annotations.append(annotation)
+            }
+            self.map.addAnnotations(annotations)
+        }
+    }
+    
     // MARK: - actions
     
     @IBAction func unwindHome(segue: UIStoryboardSegue) {}
     
-    @IBAction func clickNewMatch(_ sender: UIBarButtonItem) {
+    @IBAction func gotoNewMatch(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "gotoNewMatch", sender: nil)
     }
     
@@ -45,5 +65,17 @@ extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {}
+    
+}
+
+class Annotation: NSObject, MKAnnotation {
+    
+    var match: Match
+    var coordinate: CLLocationCoordinate2D
+    
+    init(_ data: Match, x: CLLocationDegrees, y: CLLocationDegrees) {
+        match = data
+        coordinate = CLLocationCoordinate2D(latitude: x, longitude: y)
+    }
     
 }

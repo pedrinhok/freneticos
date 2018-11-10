@@ -70,7 +70,7 @@ class SetScheduleViewController: UIViewController {
     
     // MARK: - actions
     
-    @IBAction func clickSubmit(_ sender: StandardButton) {
+    @IBAction func onClickSubmit(_ sender: StandardButton) {
         
         guard let date = date.text, date != "" else {
             return popup(title: "Ops", message: "Informe a data da partida")
@@ -89,19 +89,19 @@ class SetScheduleViewController: UIViewController {
         performSegue(withIdentifier: "unwindCreateMatch", sender: nil)
     }
     
-    @IBAction func dateSubmit(_ sender: UIButton) {
+    @IBAction func onSelectDate(_ sender: UIButton) {
         formatter.dateFormat = "dd/MM/yyyy"
         date.text = formatter.string(from: dateSelector.date)
         date.resignFirstResponder()
     }
     
-    @IBAction func timeSubmit(_ sender: UIButton) {
+    @IBAction func onSelectTime(_ sender: UIButton) {
         formatter.dateFormat = "HH:mm"
         time.text = formatter.string(from: timeSelector.date)
         time.resignFirstResponder()
     }
     
-    @IBAction func durationSubmit(_ sender: UIButton) {
+    @IBAction func onSelectDuration(_ sender: UIButton) {
         duration = Int(durationSelector.countDownDuration)
         let m = (duration! / 60) % 60
         let h = (duration! / 3600)
