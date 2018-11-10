@@ -1141,9 +1141,6 @@
                         <outlet property="durationKeyboard" destination="wWs-if-SZd" id="qTv-64-S71"/>
                         <outlet property="durationSelector" destination="S8K-Io-eaj" id="mKX-bK-7gV"/>
                         <outlet property="durationString" destination="zzJ-45-tX1" id="31R-dI-7BJ"/>
-                        <outlet property="time" destination="fRi-Ts-67v" id="Z4n-qD-GBU"/>
-                        <outlet property="timeKeyboard" destination="JI4-PR-wdV" id="jC0-Hc-1qQ"/>
-                        <outlet property="timeSelector" destination="45M-tS-FrI" id="MxI-ne-auo"/>
                         <segue destination="jjN-zr-suS" kind="unwind" identifier="unwindCreateMatch" unwindAction="unwindCreateMatchWithSegue:" id="s5N-6S-FCh"/>
                     </connections>
                 </viewController>
@@ -1178,7 +1175,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KN3-DR-PR5">
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="KN3-DR-PR5">
                             <rect key="frame" x="0.0" y="30" width="320" height="150"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -1200,57 +1197,6 @@
                         <constraint firstAttribute="bottom" secondItem="KN3-DR-PR5" secondAttribute="bottom" id="lnX-23-w84"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="skW-UU-G1D"/>
-                </view>
-                <view contentMode="scaleToFill" id="JI4-PR-wdV">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="45M-tS-FrI">
-                            <rect key="frame" x="0.0" y="30" width="320" height="150"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="150" id="b60-Hc-XZP"/>
-                            </constraints>
-                            <date key="date" timeIntervalSinceReferenceDate="554389381.00123">
-                                <!--2018-07-27 13:03:01 +0000-->
-                            </date>
-                        </datePicker>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXB-eH-sUy" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
-                            <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2he-vI-Yte">
-                                    <rect key="frame" x="284" y="0.0" width="30" height="30"/>
-                                    <state key="normal" title="OK"/>
-                                    <connections>
-                                        <action selector="onSelectTime:" destination="IW4-n0-w1x" eventType="touchUpInside" id="Qg5-4z-7Yj"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstItem="2he-vI-Yte" firstAttribute="centerY" secondItem="bXB-eH-sUy" secondAttribute="centerY" id="Sza-nF-o3j"/>
-                                <constraint firstAttribute="trailing" secondItem="2he-vI-Yte" secondAttribute="trailing" constant="10" id="pXd-59-isn"/>
-                            </constraints>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                    <real key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </view>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="bXB-eH-sUy" firstAttribute="top" secondItem="bGM-hZ-awJ" secondAttribute="top" id="5ph-rF-ktp"/>
-                        <constraint firstItem="45M-tS-FrI" firstAttribute="trailing" secondItem="bGM-hZ-awJ" secondAttribute="trailing" id="72Q-vA-fA0"/>
-                        <constraint firstItem="45M-tS-FrI" firstAttribute="top" secondItem="bXB-eH-sUy" secondAttribute="bottom" id="RCb-XP-p41"/>
-                        <constraint firstAttribute="bottom" secondItem="45M-tS-FrI" secondAttribute="bottom" id="cw4-FE-mNr"/>
-                        <constraint firstItem="45M-tS-FrI" firstAttribute="leading" secondItem="bGM-hZ-awJ" secondAttribute="leading" id="e9P-oP-xFL"/>
-                        <constraint firstItem="bXB-eH-sUy" firstAttribute="trailing" secondItem="bGM-hZ-awJ" secondAttribute="trailing" constant="2" id="suj-dQ-OPT"/>
-                        <constraint firstItem="bXB-eH-sUy" firstAttribute="leading" secondItem="JI4-PR-wdV" secondAttribute="leading" constant="-2" id="y7c-vJ-JTA"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="bGM-hZ-awJ"/>
                 </view>
                 <view contentMode="scaleToFill" id="wWs-if-SZd">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
