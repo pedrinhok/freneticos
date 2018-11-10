@@ -974,13 +974,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko4-Fj-Ssi">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-N5-FnS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATA E HORÁRIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-N5-FnS">
                                         <rect key="frame" x="8" y="8" width="304" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="34" width="304" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="wbU-4A-hDk"/>
@@ -1003,43 +1003,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HORÁRIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVF-xV-2mv">
-                                        <rect key="frame" x="8" y="84" width="148" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRi-Ts-67v" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="110" width="148" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="Inj-DH-MmW"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DURAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25K-N1-TNO">
-                                        <rect key="frame" x="164" y="84" width="148" height="18"/>
+                                        <rect key="frame" x="8" y="84" width="304" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzJ-45-tX1" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
-                                        <rect key="frame" x="164" y="110" width="148" height="42"/>
+                                        <rect key="frame" x="8" y="110" width="304" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="Pwz-lr-78T"/>
                                         </constraints>
@@ -1088,22 +1059,16 @@
                                 <constraints>
                                     <constraint firstItem="25K-N1-TNO" firstAttribute="top" secondItem="gIN-Vw-O6C" secondAttribute="bottom" constant="8" id="3WP-CZ-AFm"/>
                                     <constraint firstItem="zzJ-45-tX1" firstAttribute="top" secondItem="25K-N1-TNO" secondAttribute="bottom" constant="8" id="4dZ-t4-zzw"/>
-                                    <constraint firstItem="cFd-UP-R6M" firstAttribute="top" secondItem="fRi-Ts-67v" secondAttribute="bottom" constant="15" id="4nd-Yq-Bg0"/>
-                                    <constraint firstItem="25K-N1-TNO" firstAttribute="leading" secondItem="YVF-xV-2mv" secondAttribute="trailing" constant="8" id="7Nz-qM-v3l"/>
-                                    <constraint firstItem="25K-N1-TNO" firstAttribute="width" secondItem="YVF-xV-2mv" secondAttribute="width" id="BRN-DS-L4e"/>
-                                    <constraint firstItem="fRi-Ts-67v" firstAttribute="top" secondItem="YVF-xV-2mv" secondAttribute="bottom" constant="8" id="BSh-Li-nDE"/>
+                                    <constraint firstItem="cFd-UP-R6M" firstAttribute="top" secondItem="zzJ-45-tX1" secondAttribute="bottom" constant="15" id="DcT-5E-ZP8"/>
                                     <constraint firstItem="cFd-UP-R6M" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="Dl7-Z6-VdZ"/>
                                     <constraint firstAttribute="trailing" secondItem="zzJ-45-tX1" secondAttribute="trailing" constant="8" id="K7q-NL-mnr"/>
                                     <constraint firstAttribute="trailing" secondItem="gIN-Vw-O6C" secondAttribute="trailing" constant="8" id="OGy-Zv-m2d"/>
-                                    <constraint firstItem="fRi-Ts-67v" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="SST-wr-Uw6"/>
                                     <constraint firstItem="aHl-N5-FnS" firstAttribute="top" secondItem="Ko4-Fj-Ssi" secondAttribute="top" constant="8" id="VWH-gi-PaP"/>
                                     <constraint firstAttribute="trailing" secondItem="aHl-N5-FnS" secondAttribute="trailing" constant="8" id="Wgn-gp-i6S"/>
-                                    <constraint firstItem="zzJ-45-tX1" firstAttribute="width" secondItem="fRi-Ts-67v" secondAttribute="width" id="WqP-XW-GJA"/>
                                     <constraint firstAttribute="trailing" secondItem="cFd-UP-R6M" secondAttribute="trailing" constant="8" id="dK1-Ei-9ZF"/>
-                                    <constraint firstItem="YVF-xV-2mv" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="heD-y0-PLF"/>
+                                    <constraint firstItem="25K-N1-TNO" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="etN-EF-Iet"/>
                                     <constraint firstItem="gIN-Vw-O6C" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="iWx-jh-Fzl"/>
-                                    <constraint firstItem="zzJ-45-tX1" firstAttribute="leading" secondItem="fRi-Ts-67v" secondAttribute="trailing" constant="8" id="jrG-uS-nTi"/>
-                                    <constraint firstItem="YVF-xV-2mv" firstAttribute="top" secondItem="gIN-Vw-O6C" secondAttribute="bottom" constant="8" id="thr-r0-Vcx"/>
+                                    <constraint firstItem="zzJ-45-tX1" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="kbL-Pa-ozH"/>
                                     <constraint firstItem="aHl-N5-FnS" firstAttribute="leading" secondItem="Ko4-Fj-Ssi" secondAttribute="leading" constant="8" id="y0N-eZ-P54"/>
                                     <constraint firstItem="gIN-Vw-O6C" firstAttribute="top" secondItem="aHl-N5-FnS" secondAttribute="bottom" constant="8" id="yCA-iJ-cHN"/>
                                     <constraint firstAttribute="trailing" secondItem="25K-N1-TNO" secondAttribute="trailing" constant="8" id="z5P-dp-aVr"/>
@@ -1198,10 +1163,10 @@
                             </date>
                         </datePicker>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
-                            <rect key="frame" x="-2" y="0.0" width="320" height="30"/>
+                            <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-qI-1Zi">
-                                    <rect key="frame" x="280" y="0.0" width="30" height="30"/>
+                                    <rect key="frame" x="284" y="0.0" width="30" height="30"/>
                                     <state key="normal" title="OK"/>
                                     <connections>
                                         <action selector="onSelectDuration:" destination="IW4-n0-w1x" eventType="touchUpInside" id="0Oq-yn-chb"/>
@@ -1225,13 +1190,13 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="BUW-nz-d41" firstAttribute="leading" secondItem="7rf-g3-Rcr" secondAttribute="leading" constant="-2" id="94A-gf-cD3"/>
-                        <constraint firstItem="S8K-Io-eaj" firstAttribute="top" secondItem="BUW-nz-d41" secondAttribute="bottom" id="DEs-Vm-dHx"/>
-                        <constraint firstItem="BUW-nz-d41" firstAttribute="top" secondItem="7rf-g3-Rcr" secondAttribute="top" id="OoJ-Qz-C3J"/>
+                        <constraint firstAttribute="trailing" secondItem="BUW-nz-d41" secondAttribute="trailing" constant="-2" id="6fn-ZQ-Bv4"/>
+                        <constraint firstItem="S8K-Io-eaj" firstAttribute="top" secondItem="BUW-nz-d41" secondAttribute="bottom" id="JSF-wx-LjJ"/>
+                        <constraint firstItem="BUW-nz-d41" firstAttribute="leading" secondItem="wWs-if-SZd" secondAttribute="leading" constant="-2" id="LKH-Fw-9X1"/>
                         <constraint firstItem="S8K-Io-eaj" firstAttribute="trailing" secondItem="7rf-g3-Rcr" secondAttribute="trailing" id="THT-jw-hRt"/>
                         <constraint firstAttribute="bottom" secondItem="S8K-Io-eaj" secondAttribute="bottom" id="VCZ-oy-D5R"/>
-                        <constraint firstAttribute="trailing" secondItem="BUW-nz-d41" secondAttribute="trailing" constant="2" id="X8W-Zo-BlQ"/>
                         <constraint firstItem="S8K-Io-eaj" firstAttribute="leading" secondItem="7rf-g3-Rcr" secondAttribute="leading" id="b0y-T3-oKg"/>
+                        <constraint firstItem="BUW-nz-d41" firstAttribute="top" secondItem="7rf-g3-Rcr" secondAttribute="top" id="gso-bb-lGJ"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="7rf-g3-Rcr"/>
                 </view>

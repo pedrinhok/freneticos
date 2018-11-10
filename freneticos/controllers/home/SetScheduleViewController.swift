@@ -64,10 +64,10 @@ class SetScheduleViewController: UIViewController {
     @IBAction func onClickSubmit(_ sender: StandardButton) {
         
         guard let date = date.text, date != "" else {
-            return popup(title: "Ops", message: "Informe a data e o horário da partida")
+            return popup(title: "Ops", message: "Informe a data e o horário")
         }
         guard let duration = duration else {
-            return popup(title: "Ops", message: "Informe a duração da partida")
+            return popup(title: "Ops", message: "Informe a duração")
         }
         
         match.date = date

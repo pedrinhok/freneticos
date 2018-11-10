@@ -101,23 +101,23 @@ class CreateMatchViewController: UIViewController {
         
         guard let sport = sport.text, sport != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Selecione o esporte da partida")
+            return popup(title: "Ops", message: "Selecione o esporte")
         }
         if match.location == nil, match.x == nil, match.y == nil  {
             sender.active()
-            return popup(title: "Ops", message: "Informe o local da partida")
+            return popup(title: "Ops", message: "Informe o local")
         }
         if match.date == nil, match.duration == nil  {
             sender.active()
-            return popup(title: "Ops", message: "Informe a data e o horário da partida")
+            return popup(title: "Ops", message: "Informe a data e o horário")
         }
         guard let positions = positions.text, positions != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe o número de vagas para a partida")
+            return popup(title: "Ops", message: "Informe o número de vagas")
         }
         guard let price = price.text, price != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe o preço para os participantes")
+            return popup(title: "Ops", message: "Informe o preço para cada participante")
         }
         guard let name = name.text, name != "" else {
             sender.active()
