@@ -13,7 +13,7 @@ class Match: Codable {
     var moment: String?
     var duration: Int?
     var positions: Int?
-    var price: Double?
+    var price: String?
     var subscribers: [Subscriber]?
     
     func durationString() -> String? {

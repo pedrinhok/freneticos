@@ -29,6 +29,20 @@ class HomeViewController: UIViewController {
         getMatches()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+            
+        case "gotoShowMatch":
+            guard let vc = segue.destination as? ShowMatchViewController else { return }
+            guard let match = sender as? Match else { return }
+            vc.match = match
+            return
+            
+        case .none, .some(_):
+            return
+        }
+    }
+    
     // MARK: - functions
     
     func getMatches() {
@@ -64,7 +78,11 @@ extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
         map.showsUserLocation = true
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {}
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation as? Annotation else { return }
+        let match = annotation.match
+        performSegue(withIdentifier: "gotoShowMatch", sender: match)
+    }
     
 }
 

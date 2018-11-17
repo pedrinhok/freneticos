@@ -5,7 +5,7 @@ class CreateMatchViewController: UIViewController {
     // MARK: - properties
     
     var match: Match = Match()
-    var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Ginástica", "Golfe", "Futebol", "Futebol americano", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
+    var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Futebol", "Futebol americano", "Ginástica", "Golfe", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
     
     // MARK: - outlets
     
@@ -126,7 +126,7 @@ class CreateMatchViewController: UIViewController {
         
         match.sport = sport
         match.positions = Int(positions)
-        match.price = Double(price)
+        match.price = price
         match.name = name
         match.desc = desc.text
         
@@ -157,7 +157,7 @@ class CreateMatchViewController: UIViewController {
         var content: UIEdgeInsets = scroll.contentInset
         switch notification.name {
         case Notification.Name.UIKeyboardWillShow, Notification.Name.UIKeyboardWillChangeFrame:
-            content.bottom = frame.size.height
+            content.bottom = frame.size.height - 50
         default:
             content = UIEdgeInsets.zero
         }

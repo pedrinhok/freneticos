@@ -108,7 +108,7 @@ class SetLocationViewController: UIViewController {
         let frame: CGRect = (notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         
         if notification.name == Notification.Name.UIKeyboardWillShow {
-            view.frame.origin.y = -frame.height
+            view.frame.origin.y = -(frame.height - 50)
         } else {
             view.frame.origin.y = 0
         }

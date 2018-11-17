@@ -32,6 +32,7 @@
 		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
+		E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF442C2197449A009224DA /* ShowMatchViewController.swift */; };
 		E9E07912210BC7B600D2A7FD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */; };
 		E9E297842106199F00182BCA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E297832106199F00182BCA /* SigninViewController.swift */; };
 		E9E2978721061AF400182BCA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2978621061AF400182BCA /* UserService.swift */; };
@@ -67,6 +68,7 @@
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CF442C2197449A009224DA /* ShowMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMatchViewController.swift; sourceTree = "<group>"; };
 		E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		E9E297832106199F00182BCA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		E9E2978621061AF400182BCA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */,
 				E93746B4210A307F009A3769 /* SetLocationViewController.swift */,
 				E9321812210B3DF500448E66 /* SetScheduleViewController.swift */,
+				E9CF442C2197449A009224DA /* ShowMatchViewController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */,
 				E980B12F2109FE7D00A05F34 /* Match.swift in Sources */,
 				E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */,
+				E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */,
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
 				E99722CE210BB248008065B7 /* MatchService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
