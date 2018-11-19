@@ -14,7 +14,7 @@ class Match: Codable {
     var duration: Int?
     var positions: Int?
     var price: String?
-    var subscribers: [Subscriber]?
+    var subscribers: [String: Int]?
     
     func durationString() -> String? {
         guard let duration = duration else { return nil }

@@ -6,9 +6,9 @@ class MatchService {
     private static let db = Firestore.firestore()
     
     public static func create(_ match: Match, completion: @escaping (String?) -> ()) {
-        // converts match to JSON
+        // Converte a atividade em JSON
         let JSON = try! JSONEncoder().encode(match)
-        // converts JSON to dictionary
+        // Converte o JSON em dicionário
         let data = try! JSONSerialization.jsonObject(with: JSON, options: []) as! [String: Any]
         
         db.collection("matches").addDocument(data: data) { (error) in
@@ -29,15 +29,29 @@ class MatchService {
                 completion([])
             } else {
                 for document in snapshot!.documents {
-                    // converts document to JSON data
+                    // Converte o documento em JSON
                     let data = try! JSONSerialization.data(withJSONObject: document.data())
-                    // converts JSON data to match
+                    // Converte o JSON em uma atividade
                     let match = try! JSONDecoder().decode(Match.self, from: data)
+                    // Atribui a referência da atividade
+                    match.ref = document.documentID
                     
                     matches.append(match)
                 }
                 completion(matches)
             }
+        }
+    }
+    
+    public static func subscribe(match: Match, user: User, completion: @escaping (Error?) -> ()) {
+        let request = db.collection("matches").document(match.ref!)
+        
+        // Adiciona o usuário como inscrito na atividade (0 é o status pendente)
+        let data = ["subscribers.\(user.ref!)": 0]
+        
+        // Submete requisição
+        request.updateData(data) { (error) in
+            completion(error)
         }
     }
     

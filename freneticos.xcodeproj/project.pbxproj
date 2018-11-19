@@ -16,7 +16,6 @@
 		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
 		E96DCFF52106A58600E58377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96DCFF42106A58600E58377 /* GoogleService-Info.plist */; };
 		E980B12F2109FE7D00A05F34 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Match.swift */; };
-		E980B1312109FFD100A05F34 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B1302109FFD100A05F34 /* Subscriber.swift */; };
 		E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992AE642106670A00AFB90F /* HomeViewController.swift */; };
 		E99722CE210BB248008065B7 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99722CD210BB248008065B7 /* MatchService.swift */; };
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
@@ -50,7 +49,6 @@
 		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E96DCFF42106A58600E58377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E980B12E2109FE7D00A05F34 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		E980B1302109FFD100A05F34 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		E992AE642106670A00AFB90F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E99722CD210BB248008065B7 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 			children = (
 				E9B3A021210783CB00E44AC4 /* User.swift */,
 				E980B12E2109FE7D00A05F34 /* Match.swift */,
-				E980B1302109FFD100A05F34 /* Subscriber.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -365,7 +362,6 @@
 				E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */,
 				E9BB604721090B5E00B990EC /* StandardNavigationBar.swift in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
-				E980B1312109FFD100A05F34 /* Subscriber.swift in Sources */,
 				E9B038552107F28200B2888A /* StandardTabBar.swift in Sources */,
 				E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */,
 			);
