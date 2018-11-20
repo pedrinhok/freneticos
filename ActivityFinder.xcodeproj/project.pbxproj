@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A70422A6F63F83E6E68D59B /* Pods_freneticos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23530813664B76F55C220BEE /* Pods_freneticos.framework */; };
+		4A70422A6F63F83E6E68D59B /* Pods_ActivityFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23530813664B76F55C220BEE /* Pods_ActivityFinder.framework */; };
 		E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */; };
 		E9321813210B3DF500448E66 /* SetScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9321812210B3DF500448E66 /* SetScheduleViewController.swift */; };
 		E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746B4210A307F009A3769 /* SetLocationViewController.swift */; };
@@ -28,7 +28,7 @@
 		E9C74DC1210613CD00EF770E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC0210613CD00EF770E /* AppDelegate.swift */; };
 		E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC2210613CD00EF770E /* ViewController.swift */; };
 		E9C74DC6210613CD00EF770E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DC4210613CD00EF770E /* Main.storyboard */; };
-		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
+		E9C74DC9210613CD00EF770E /* ActivityFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* ActivityFinder.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
 		E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF442C2197449A009224DA /* ShowMatchViewController.swift */; };
@@ -38,9 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		23530813664B76F55C220BEE /* Pods_freneticos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freneticos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.debug.xcconfig"; sourceTree = "<group>"; };
-		7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.release.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.release.xcconfig"; sourceTree = "<group>"; };
+		23530813664B76F55C220BEE /* Pods_ActivityFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52918835A8828D8E2521BBF4 /* Pods-ActivityFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityFinder/Pods-ActivityFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		7D07950EC52E32CFCDAE9D26 /* Pods-ActivityFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivityFinder/Pods-ActivityFinder.release.xcconfig"; sourceTree = "<group>"; };
 		E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
 		E9321812210B3DF500448E66 /* SetScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleViewController.swift; sourceTree = "<group>"; };
 		E93746B4210A307F009A3769 /* SetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +58,11 @@
 		E9B038542107F28200B2888A /* StandardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTabBar.swift; sourceTree = "<group>"; };
 		E9B3A021210783CB00E44AC4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9BB604621090B5E00B990EC /* StandardNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardNavigationBar.swift; sourceTree = "<group>"; };
-		E9C74DBD210613CD00EF770E /* freneticos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freneticos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C74DBD210613CD00EF770E /* ActivityFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C74DC0210613CD00EF770E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C74DC2210613CD00EF770E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9C74DC5210613CD00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9C74DC8210613CD00EF770E /* freneticos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = freneticos.xcdatamodel; sourceTree = "<group>"; };
+		E9C74DC8210613CD00EF770E /* ActivityFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivityFinder.xcdatamodel; sourceTree = "<group>"; };
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A70422A6F63F83E6E68D59B /* Pods_freneticos.framework in Frameworks */,
+				4A70422A6F63F83E6E68D59B /* Pods_ActivityFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		4EEA44FC3DEAA5C569B86A7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23530813664B76F55C220BEE /* Pods_freneticos.framework */,
+				23530813664B76F55C220BEE /* Pods_ActivityFinder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,8 +95,8 @@
 		72838174899248F038A6379D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */,
-				7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */,
+				52918835A8828D8E2521BBF4 /* Pods-ActivityFinder.debug.xcconfig */,
+				7D07950EC52E32CFCDAE9D26 /* Pods-ActivityFinder.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 		E9C74DB4210613CD00EF770E = {
 			isa = PBXGroup;
 			children = (
-				E9C74DBF210613CD00EF770E /* freneticos */,
+				E9C74DBF210613CD00EF770E /* ActivityFinder */,
 				E9C74DBE210613CD00EF770E /* Products */,
 				72838174899248F038A6379D /* Pods */,
 				4EEA44FC3DEAA5C569B86A7C /* Frameworks */,
@@ -178,12 +178,12 @@
 		E9C74DBE210613CD00EF770E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9C74DBD210613CD00EF770E /* freneticos.app */,
+				E9C74DBD210613CD00EF770E /* ActivityFinder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9C74DBF210613CD00EF770E /* freneticos */ = {
+		E9C74DBF210613CD00EF770E /* ActivityFinder */ = {
 			isa = PBXGroup;
 			children = (
 				E9C74DC0210613CD00EF770E /* AppDelegate.swift */,
@@ -192,13 +192,13 @@
 				E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */,
 				E9C74DCF210613CE00EF770E /* Info.plist */,
 				E96DCFF42106A58600E58377 /* GoogleService-Info.plist */,
-				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
+				E9C74DC7210613CD00EF770E /* ActivityFinder.xcdatamodeld */,
 				E95B5AC12106A1410085C83E /* controllers */,
 				E9AC4F1F21063AAD0058F4CC /* layouts */,
 				E9B3A0202107839B00E44AC4 /* models */,
 				E9E2978521061ABD00182BCA /* services */,
 			);
-			path = freneticos;
+			path = ActivityFinder;
 			sourceTree = "<group>";
 		};
 		E9E2978521061ABD00182BCA /* services */ = {
@@ -213,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9C74DBC210613CD00EF770E /* freneticos */ = {
+		E9C74DBC210613CD00EF770E /* ActivityFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9C74DD2210613CE00EF770E /* Build configuration list for PBXNativeTarget "freneticos" */;
+			buildConfigurationList = E9C74DD2210613CE00EF770E /* Build configuration list for PBXNativeTarget "ActivityFinder" */;
 			buildPhases = (
 				D13408E886F712775EB77517 /* [CP] Check Pods Manifest.lock */,
 				E9C74DB9210613CD00EF770E /* Sources */,
@@ -227,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = freneticos;
-			productName = freneticos;
-			productReference = E9C74DBD210613CD00EF770E /* freneticos.app */;
+			name = ActivityFinder;
+			productName = ActivityFinder;
+			productReference = E9C74DBD210613CD00EF770E /* ActivityFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E9C74DB8210613CD00EF770E /* Build configuration list for PBXProject "freneticos" */;
+			buildConfigurationList = E9C74DB8210613CD00EF770E /* Build configuration list for PBXProject "ActivityFinder" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9C74DBC210613CD00EF770E /* freneticos */,
+				E9C74DBC210613CD00EF770E /* ActivityFinder */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-freneticos/Pods-freneticos-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ActivityFinder/Pods-ActivityFinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -313,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-freneticos/Pods-freneticos-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivityFinder/Pods-ActivityFinder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D13408E886F712775EB77517 /* [CP] Check Pods Manifest.lock */ = {
@@ -327,7 +327,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-freneticos-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ActivityFinder-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,7 +358,7 @@
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
 				E99722CE210BB248008065B7 /* MatchService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
-				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
+				E9C74DC9210613CD00EF770E /* ActivityFinder.xcdatamodeld in Sources */,
 				E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */,
 				E9BB604721090B5E00B990EC /* StandardNavigationBar.swift in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
@@ -505,16 +505,16 @@
 		};
 		E9C74DD3210613CE00EF770E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */;
+			baseConfigurationReference = 52918835A8828D8E2521BBF4 /* Pods-ActivityFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = freneticos/Info.plist;
+				INFOPLIST_FILE = ActivityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pedrokayser.freneticos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrokayser.ActivityFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,16 +523,16 @@
 		};
 		E9C74DD4210613CE00EF770E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */;
+			baseConfigurationReference = 7D07950EC52E32CFCDAE9D26 /* Pods-ActivityFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = freneticos/Info.plist;
+				INFOPLIST_FILE = ActivityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pedrokayser.freneticos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrokayser.ActivityFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -542,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9C74DB8210613CD00EF770E /* Build configuration list for PBXProject "freneticos" */ = {
+		E9C74DB8210613CD00EF770E /* Build configuration list for PBXProject "ActivityFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C74DD0210613CE00EF770E /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9C74DD2210613CE00EF770E /* Build configuration list for PBXNativeTarget "freneticos" */ = {
+		E9C74DD2210613CE00EF770E /* Build configuration list for PBXNativeTarget "ActivityFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9C74DD3210613CE00EF770E /* Debug */,
@@ -563,13 +563,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */ = {
+		E9C74DC7210613CD00EF770E /* ActivityFinder.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E9C74DC8210613CD00EF770E /* freneticos.xcdatamodel */,
+				E9C74DC8210613CD00EF770E /* ActivityFinder.xcdatamodel */,
 			);
-			currentVersion = E9C74DC8210613CD00EF770E /* freneticos.xcdatamodel */;
-			path = freneticos.xcdatamodeld;
+			currentVersion = E9C74DC8210613CD00EF770E /* ActivityFinder.xcdatamodel */;
+			path = ActivityFinder.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

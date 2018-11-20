@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
         <!--Signin View Controller-->
         <scene sceneID="vy4-UL-JjM">
             <objects>
-                <viewController id="ceY-m8-kBH" customClass="SigninViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ceY-m8-kBH" customClass="SigninViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mCL-Ht-sOQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                             <constraint firstAttribute="width" constant="100" id="bBR-3i-2M8"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-5P-L0s" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-5P-L0s" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="200" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -71,7 +71,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3r-Wx-3OC" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3r-Wx-3OC" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="250" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -95,7 +95,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abo-e0-aGY" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abo-e0-aGY" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="317" width="359" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -116,7 +116,7 @@
                                             <action selector="clickSingin:" destination="ceY-m8-kBH" eventType="touchUpInside" id="xlN-zf-GAY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfJ-G5-zGo" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfJ-G5-zGo" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="369" width="359" height="22"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -179,7 +179,7 @@
         <!--Signup View Controller-->
         <scene sceneID="3UI-nT-vnt">
             <objects>
-                <viewController id="ihd-xj-4la" customClass="SignupViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ihd-xj-4la" customClass="SignupViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q6H-y3-RJN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
                                             <constraint firstAttribute="width" constant="100" id="Zhl-qj-UCK"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dg-HB-oWL" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dg-HB-oWL" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="200" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -218,7 +218,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN6-ch-0Df" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN6-ch-0Df" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="250" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -242,7 +242,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22g-8I-xMk" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22g-8I-xMk" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="300" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -266,7 +266,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoL-dh-mUE" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoL-dh-mUE" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="350" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -290,7 +290,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yT-Vf-By2" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5yT-Vf-By2" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="400" width="359" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -314,7 +314,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B0-ZI-A5d" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B0-ZI-A5d" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="457" width="359" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -335,7 +335,7 @@
                                             <action selector="clickSignup:" destination="ihd-xj-4la" eventType="touchUpInside" id="LDj-rF-zTE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdA-MG-KeL" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdA-MG-KeL" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="509" width="359" height="22"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -411,7 +411,7 @@
         <!--Home-->
         <scene sceneID="bX4-AV-lK6">
             <objects>
-                <viewController title="Home" id="Yb7-5x-dQs" customClass="HomeViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="Yb7-5x-dQs" customClass="HomeViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OnN-KH-RDe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -450,7 +450,7 @@
         <!--Create Match-->
         <scene sceneID="K9i-NZ-sga">
             <objects>
-                <viewController title="Create Match" id="1BE-uc-vcf" customClass="CreateMatchViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Create Match" id="1BE-uc-vcf" customClass="CreateMatchViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Tw-fp-Uhh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,7 +467,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione o esporte" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-BH-FGf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecione o esporte" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-BH-FGf" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="41" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="ttU-ca-kYV"/>
@@ -496,7 +496,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHv-he-FAw" customClass="CustomButton" customModule="freneticos" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHv-he-FAw" customClass="CustomButton" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="117" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="EOQ-rc-LhR"/>
@@ -526,7 +526,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-FE-E3N" customClass="CustomButton" customModule="freneticos" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ln-FE-E3N" customClass="CustomButton" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="193" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="sd9-A9-dqI"/>
@@ -556,7 +556,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-e2-ahx" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-e2-ahx" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="269" width="175.5" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="8Tj-Fl-4U6"/>
@@ -585,7 +585,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R$ 0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-IX-46l" customClass="CurrencyTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R$ 0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-IX-46l" customClass="CurrencyTextField" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="191.5" y="269" width="175.5" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="jJk-NG-TPP"/>
@@ -614,7 +614,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="345" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="GUv-YV-dt5"/>
@@ -643,7 +643,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="421" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="74y-3D-n8m"/>
@@ -666,7 +666,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIg-fO-F4j" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIg-fO-F4j" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="478" width="359" height="44"/>
                                                 <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -785,7 +785,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-CU-7r4" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-CU-7r4" customClass="StandardView" customModule="ActivityFinder" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYh-QF-3kV">
@@ -836,7 +836,7 @@
         <!--Set Location-->
         <scene sceneID="As5-hp-MKZ">
             <objects>
-                <viewController title="Set Location" id="cIx-nS-gjs" customClass="SetLocationViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Set Location" id="cIx-nS-gjs" customClass="SetLocationViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DT0-cZ-5S2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -878,7 +878,7 @@
                                             <constraint firstAttribute="trailing" secondItem="f1B-sH-EA1" secondAttribute="trailing" constant="8" id="o35-BO-oGh"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para o local" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7D-kt-Fj8" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para o local" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7D-kt-Fj8" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="438" width="359" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="Rqv-cI-8m5"/>
@@ -901,7 +901,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-bg-JEn" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-bg-JEn" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="495" width="359" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -967,7 +967,7 @@
         <!--Set Schedule-->
         <scene sceneID="CD1-Co-Yb2">
             <objects>
-                <viewController title="Set Schedule" id="IW4-n0-w1x" customClass="SetScheduleViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Set Schedule" id="IW4-n0-w1x" customClass="SetScheduleViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z0y-8r-F1s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -981,7 +981,7 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="34" width="359" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="wbU-4A-hDk"/>
@@ -1010,7 +1010,7 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzJ-45-tX1" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzJ-45-tX1" customClass="StandardTextField" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="110" width="359" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="Pwz-lr-78T"/>
@@ -1033,7 +1033,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-UP-R6M" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFd-UP-R6M" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                         <rect key="frame" x="8" y="167" width="359" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1102,7 +1102,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-op-OUf" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBq-op-OUf" customClass="StandardView" customModule="ActivityFinder" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puy-08-BUo">
@@ -1163,7 +1163,7 @@
                                 <!--1970-01-01 03:00:00 +0000-->
                             </date>
                         </datePicker>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="StandardView" customModule="freneticos" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUW-nz-d41" customClass="StandardView" customModule="ActivityFinder" customModuleProvider="target">
                             <rect key="frame" x="-2" y="0.0" width="324" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txd-qI-1Zi">
@@ -1207,7 +1207,7 @@
         <!--My Matches-->
         <scene sceneID="yiy-gu-sWw">
             <objects>
-                <viewController title="My Matches" id="zFr-hQ-2q6" customClass="MyMatchesViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Matches" id="zFr-hQ-2q6" customClass="MyMatchesViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrS-ff-13z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1223,7 +1223,7 @@
         <!--Profile-->
         <scene sceneID="XeR-6R-CIN">
             <objects>
-                <viewController title="Profile" id="vFY-Ea-iLf" customClass="ProfileViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="vFY-Ea-iLf" customClass="ProfileViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBh-XH-W4z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1241,7 +1241,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OnF-HH-LPo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="freneticos" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiZ-9d-1SM" customClass="StandardTabBar" customModule="ActivityFinder" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1262,7 +1262,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lDW-bF-FCb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="home" id="po1-i3-2VL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZ3-te-M03" customClass="StandardNavigationBar" customModule="freneticos" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZ3-te-M03" customClass="StandardNavigationBar" customModule="ActivityFinder" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1278,7 +1278,7 @@
         <!--Show Match-->
         <scene sceneID="6Yv-gb-3M9">
             <objects>
-                <viewController title="Show Match" id="saC-3v-pVx" customClass="ShowMatchViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Show Match" id="saC-3v-pVx" customClass="ShowMatchViewController" customModule="ActivityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vis-z5-Mk6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="630"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1442,7 +1442,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpR-Uf-XMs" customClass="StandardButton" customModule="freneticos" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpR-Uf-XMs" customClass="StandardButton" customModule="ActivityFinder" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="439" width="359" height="44"/>
                                                 <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>

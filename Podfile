@@ -1,4 +1,4 @@
-target 'freneticos' do
+target 'ActivityFinder' do
   use_frameworks!
 
   pod 'Firebase/Core'

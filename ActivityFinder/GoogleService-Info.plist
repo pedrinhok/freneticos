@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.pedrokayser.freneticos</string>
+	<string>com.pedrokayser.ActivityFinder</string>
 	<key>PROJECT_ID</key>
 	<string>freneticos-ba127</string>
 	<key>STORAGE_BUCKET</key>
