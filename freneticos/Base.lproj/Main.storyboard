@@ -1203,7 +1203,7 @@
         <!--My Matches-->
         <scene sceneID="yiy-gu-sWw">
             <objects>
-                <viewController title="My Matches" id="zFr-hQ-2q6" customClass="MyMatchesViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Matches" id="zFr-hQ-2q6" customClass="MyActivitiesViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrS-ff-13z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

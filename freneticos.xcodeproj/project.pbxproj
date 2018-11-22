@@ -12,7 +12,7 @@
 		E9321813210B3DF500448E66 /* AssignScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */; };
 		E93746B5210A307F009A3769 /* AssignLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746B4210A307F009A3769 /* AssignLocationViewController.swift */; };
 		E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC42106A1C20085C83E /* ProfileViewController.swift */; };
-		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
+		E95B5AC72106A1ED0085C83E /* MyActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyActivitiesViewController.swift */; };
 		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
 		E96DCFF52106A58600E58377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96DCFF42106A58600E58377 /* GoogleService-Info.plist */; };
 		E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Activity.swift */; };
@@ -45,7 +45,7 @@
 		E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignScheduleViewController.swift; sourceTree = "<group>"; };
 		E93746B4210A307F009A3769 /* AssignLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignLocationViewController.swift; sourceTree = "<group>"; };
 		E95B5AC42106A1C20085C83E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
+		E95B5AC62106A1ED0085C83E /* MyActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActivitiesViewController.swift; sourceTree = "<group>"; };
 		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E96DCFF42106A58600E58377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E980B12E2109FE7D00A05F34 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
@@ -101,36 +101,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E95B5AC12106A1410085C83E /* controllers */ = {
+		E95B5AC12106A1410085C83E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E9C74DC2210613CD00EF770E /* ViewController.swift */,
 				E9E297832106199F00182BCA /* SigninViewController.swift */,
 				E9AC4F26210645690058F4CC /* SignupViewController.swift */,
-				E95B5AC32106A1720085C83E /* profile */,
-				E95B5AC22106A1630085C83E /* mymatches */,
-				E992AE63210666A200AFB90F /* home */,
+				E95B5AC32106A1720085C83E /* Profile */,
+				E95B5AC22106A1630085C83E /* MyActivities */,
+				E992AE63210666A200AFB90F /* Home */,
 			);
-			path = controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		E95B5AC22106A1630085C83E /* mymatches */ = {
+		E95B5AC22106A1630085C83E /* MyActivities */ = {
 			isa = PBXGroup;
 			children = (
-				E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */,
+				E95B5AC62106A1ED0085C83E /* MyActivitiesViewController.swift */,
 			);
-			path = mymatches;
+			path = MyActivities;
 			sourceTree = "<group>";
 		};
-		E95B5AC32106A1720085C83E /* profile */ = {
+		E95B5AC32106A1720085C83E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				E95B5AC42106A1C20085C83E /* ProfileViewController.swift */,
 			);
-			path = profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		E992AE63210666A200AFB90F /* home */ = {
+		E992AE63210666A200AFB90F /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				E992AE642106670A00AFB90F /* HomeViewController.swift */,
@@ -139,10 +139,10 @@
 				E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */,
 				E9CF442C2197449A009224DA /* ShowActivityViewController.swift */,
 			);
-			path = home;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		E9AC4F1F21063AAD0058F4CC /* layouts */ = {
+		E9AC4F1F21063AAD0058F4CC /* Commons */ = {
 			isa = PBXGroup;
 			children = (
 				E9AC4F2021063B070058F4CC /* StandardTextField.swift */,
@@ -153,16 +153,16 @@
 				E962757B210A02400006E6D4 /* CustomButton.swift */,
 				E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */,
 			);
-			path = layouts;
+			path = Commons;
 			sourceTree = "<group>";
 		};
-		E9B3A0202107839B00E44AC4 /* models */ = {
+		E9B3A0202107839B00E44AC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E9B3A021210783CB00E44AC4 /* User.swift */,
 				E980B12E2109FE7D00A05F34 /* Activity.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E9C74DB4210613CD00EF770E = {
@@ -193,21 +193,21 @@
 				E9C74DCF210613CE00EF770E /* Info.plist */,
 				E96DCFF42106A58600E58377 /* GoogleService-Info.plist */,
 				E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */,
-				E95B5AC12106A1410085C83E /* controllers */,
-				E9AC4F1F21063AAD0058F4CC /* layouts */,
-				E9B3A0202107839B00E44AC4 /* models */,
-				E9E2978521061ABD00182BCA /* services */,
+				E95B5AC12106A1410085C83E /* Controllers */,
+				E9AC4F1F21063AAD0058F4CC /* Commons */,
+				E9B3A0202107839B00E44AC4 /* Models */,
+				E9E2978521061ABD00182BCA /* Services */,
 			);
 			path = freneticos;
 			sourceTree = "<group>";
 		};
-		E9E2978521061ABD00182BCA /* services */ = {
+		E9E2978521061ABD00182BCA /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				E9E2978621061AF400182BCA /* UserService.swift */,
 				E99722CD210BB248008065B7 /* MatchService.swift */,
 			);
-			path = services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +351,7 @@
 				E9E2978721061AF400182BCA /* UserService.swift in Sources */,
 				E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */,
 				E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */,
-				E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */,
+				E95B5AC72106A1ED0085C83E /* MyActivitiesViewController.swift in Sources */,
 				E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */,
 				E93746B5210A307F009A3769 /* AssignLocationViewController.swift in Sources */,
 				E9CF442D2197449A009224DA /* ShowActivityViewController.swift in Sources */,
