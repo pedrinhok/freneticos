@@ -610,7 +610,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe um nome para a atividade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-aK-aq5" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="345" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="GUv-YV-dt5"/>
@@ -639,7 +639,7 @@
                                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para a partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe uma descrição para a atividade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-e1-6Rf" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="421" width="359" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="74y-3D-n8m"/>
@@ -754,7 +754,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bdY-2R-FpG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Organizar partida" id="na1-jH-yP3">
+                    <navigationItem key="navigationItem" title="Organizar atividade" id="na1-jH-yP3">
                         <barButtonItem key="backBarButtonItem" title=" " id="ZdM-dy-2A4"/>
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -947,7 +947,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EAp-35-CKM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Organizar partida" id="Fpa-wD-6QR"/>
+                    <navigationItem key="navigationItem" title="Organizar atividade" id="Fpa-wD-6QR"/>
                     <connections>
                         <outlet property="map" destination="3An-Zu-8YQ" id="Rgn-uT-OPP"/>
                         <outlet property="name" destination="I7D-kt-Fj8" id="szR-bV-8sL"/>
@@ -977,7 +977,7 @@
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário da partida" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe a data e o horário da atividade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-Vw-O6C" customClass="StandardTextField" customModule="freneticos" customModuleProvider="target">
                                         <rect key="frame" x="8" y="34" width="584" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="wbU-4A-hDk"/>
@@ -1081,7 +1081,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MdN-fl-YUd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Organizar partida" id="oN9-QT-SiP"/>
+                    <navigationItem key="navigationItem" title="Organizar atividade" id="oN9-QT-SiP"/>
                     <connections>
                         <outlet property="durationKeyboard" destination="wWs-if-SZd" id="qTv-64-S71"/>
                         <outlet property="durationSelector" destination="S8K-Io-eaj" id="mKX-bK-7gV"/>
@@ -1539,7 +1539,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yZd-vt-ptg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Apresentação da partida" id="qc7-bY-Q1i"/>
+                    <navigationItem key="navigationItem" title="Apresentação da atividade" id="qc7-bY-Q1i"/>
                     <size key="freeformSize" width="375" height="630"/>
                     <connections>
                         <outlet property="creator" destination="dmg-aQ-RnL" id="mv5-sO-VkZ"/>

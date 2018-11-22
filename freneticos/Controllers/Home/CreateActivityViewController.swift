@@ -121,7 +121,7 @@ class CreateActivityViewController: UIViewController {
         }
         guard let name = name.text, name != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe um nome para a partida")
+            return popup(title: "Ops", message: "Informe um nome para a atividade")
         }
 
         activity.sport = sport
@@ -134,7 +134,7 @@ class CreateActivityViewController: UIViewController {
             if error != nil {
                 self.popup(title: "Ops", message: "Ocorreu um erro, tente novamente")
             } else {
-                self.popup(title: "Sucesso", message: "Partida organizada com sucesso") {
+                self.popup(title: "Sucesso", message: "Atividade organizada com sucesso") {
                     self.performSegue(withIdentifier: "unwindHome", sender: nil)
                 }
             }
