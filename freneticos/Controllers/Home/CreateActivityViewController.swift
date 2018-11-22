@@ -4,7 +4,7 @@ class CreateActivityViewController: UIViewController {
 
     // MARK: - properties
 
-    var match: Activity = Activity()
+    var activity: Activity = Activity()
     var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Futebol", "Futebol americano", "Ginástica", "Golfe", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
 
     // MARK: - outlets
@@ -12,7 +12,7 @@ class CreateActivityViewController: UIViewController {
     @IBOutlet weak var scroll: UIScrollView!
     @IBOutlet weak var sport: StandardTextField!
     @IBOutlet weak var positions: StandardTextField!
-    @IBOutlet weak var price: StandardTextField!
+    @IBOutlet weak var expense: StandardTextField!
     @IBOutlet weak var name: StandardTextField!
     @IBOutlet weak var desc: StandardTextField!
     @IBOutlet weak var buttonLocation: CustomButton!
@@ -27,7 +27,7 @@ class CreateActivityViewController: UIViewController {
 
         sport.delegate = self
         positions.delegate = self
-        price.delegate = self
+        expense.delegate = self
         name.delegate = self
         desc.delegate = self
 
@@ -43,11 +43,11 @@ class CreateActivityViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if let location = match.location {
+        if let location = activity.location {
             buttonLocation.setTitle(location, for: .normal)
         }
-        if let moment = match.datetime {
-            buttonSchedule.setTitle("\(moment)", for: .normal)
+        if let datetime = activity.datetime {
+            buttonSchedule.setTitle("\(datetime)", for: .normal)
         }
     }
 
@@ -56,12 +56,12 @@ class CreateActivityViewController: UIViewController {
 
         case "gotoSetLocation":
             guard let vc = segue.destination as? AssignLocationViewController else { return }
-            vc.match = match
+            vc.activity = activity
             return
 
         case "gotoSetSchedule":
             guard let vc = segue.destination as? AssignScheduleViewController else { return }
-            vc.match = match
+            vc.activity = activity
             return
 
         case .none, .some(_):
@@ -103,11 +103,11 @@ class CreateActivityViewController: UIViewController {
             sender.active()
             return popup(title: "Ops", message: "Selecione o esporte")
         }
-        if match.location == nil, match.x == nil, match.y == nil  {
+        if activity.location == nil, activity.x == nil, activity.y == nil  {
             sender.active()
             return popup(title: "Ops", message: "Informe o local")
         }
-        if match.datetime == nil, match.duration == nil  {
+        if activity.datetime == nil, activity.duration == nil  {
             sender.active()
             return popup(title: "Ops", message: "Informe a data e o horário")
         }
@@ -115,7 +115,7 @@ class CreateActivityViewController: UIViewController {
             sender.active()
             return popup(title: "Ops", message: "Informe o número de vagas")
         }
-        guard let price = price.text, price != "" else {
+        guard let expense = expense.text, expense != "" else {
             sender.active()
             return popup(title: "Ops", message: "Informe o preço para cada participante")
         }
@@ -124,13 +124,13 @@ class CreateActivityViewController: UIViewController {
             return popup(title: "Ops", message: "Informe um nome para a partida")
         }
 
-        match.sport = sport
-        match.positions = Int(positions)
-        match.expense = price
-        match.name = name
-        match.desc = desc.text
+        activity.sport = sport
+        activity.positions = Int(positions)
+        activity.expense = expense
+        activity.name = name
+        activity.desc = desc.text
 
-        ActivityService.create(match) { (error) in
+        ActivityService.create(activity) { (error) in
             if error != nil {
                 self.popup(title: "Ops", message: "Ocorreu um erro, tente novamente")
             } else {

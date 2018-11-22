@@ -765,7 +765,7 @@
                         <outlet property="desc" destination="f2h-e1-6Rf" id="RvS-L3-bMQ"/>
                         <outlet property="name" destination="V7h-aK-aq5" id="xHp-QU-cTc"/>
                         <outlet property="positions" destination="MQP-e2-ahx" id="EOz-hN-8rY"/>
-                        <outlet property="price" destination="hyK-IX-46l" id="EN8-Fp-yD9"/>
+                        <outlet property="expense" destination="hyK-IX-46l" id="EN8-Fp-yD9"/>
                         <outlet property="scroll" destination="BYe-kV-UFh" id="NXy-DU-TCy"/>
                         <outlet property="sport" destination="1z0-BH-FGf" id="Miz-Xx-Qke"/>
                         <outlet property="sportKeyboard" destination="gAU-XN-d0b" id="IPk-HL-lcs"/>
@@ -1086,9 +1086,9 @@
                         <outlet property="durationKeyboard" destination="wWs-if-SZd" id="qTv-64-S71"/>
                         <outlet property="durationSelector" destination="S8K-Io-eaj" id="mKX-bK-7gV"/>
                         <outlet property="durationString" destination="zzJ-45-tX1" id="31R-dI-7BJ"/>
-                        <outlet property="moment" destination="gIN-Vw-O6C" id="7Zo-ls-Uil"/>
-                        <outlet property="momentKeyboard" destination="HCG-xt-ehf" id="pva-P3-JtN"/>
-                        <outlet property="momentSelector" destination="KN3-DR-PR5" id="FhG-cU-pA2"/>
+                        <outlet property="datetime" destination="gIN-Vw-O6C" id="7Zo-ls-Uil"/>
+                        <outlet property="datetimeKeyboard" destination="HCG-xt-ehf" id="pva-P3-JtN"/>
+                        <outlet property="datetimeSelector" destination="KN3-DR-PR5" id="FhG-cU-pA2"/>
                         <segue destination="jjN-zr-suS" kind="unwind" identifier="unwindCreateActivity" unwindAction="unwindCreateActivityWithSegue:" id="s5N-6S-FCh"/>
                     </connections>
                 </viewController>
@@ -1547,7 +1547,7 @@
                         <outlet property="location" destination="qde-qI-NPP" id="Tht-W8-4OE"/>
                         <outlet property="placemark" destination="tVr-Au-E9p" id="4Cq-wf-CU9"/>
                         <outlet property="positions" destination="koK-Vp-e3D" id="Fi9-qz-3Zp"/>
-                        <outlet property="price" destination="7mI-kU-ewR" id="yEJ-eh-EJ9"/>
+                        <outlet property="expense" destination="7mI-kU-ewR" id="yEJ-eh-EJ9"/>
                         <outlet property="schedule" destination="Dwm-3J-1ps" id="Xho-Y2-adl"/>
                         <outlet property="sport" destination="ZYY-nX-2rI" id="YP4-s9-xnI"/>
                         <outlet property="status" destination="bnC-mj-ijY" id="8TR-G1-Nh5"/>

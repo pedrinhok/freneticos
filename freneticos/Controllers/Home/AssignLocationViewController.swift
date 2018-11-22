@@ -7,7 +7,7 @@ class AssignLocationViewController: UIViewController {
 
     var locationManager = CLLocationManager()
     var geocoder = CLGeocoder()
-    var match: Activity!
+    var activity: Activity!
     var ann: MKPointAnnotation?
 
     // MARK: - outlets
@@ -23,7 +23,7 @@ class AssignLocationViewController: UIViewController {
 
         name.delegate = self
 
-        name.text = match.location
+        name.text = activity.location
 
         setCurrentLocation()
 
@@ -39,7 +39,7 @@ class AssignLocationViewController: UIViewController {
     func setCurrentLocation() {
         var coordinate: CLLocationCoordinate2D
 
-        if let x = match.x, let y = match.y {
+        if let x = activity.x, let y = activity.y {
             coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(x), longitude: CLLocationDegrees(y))
             setAnnotation(coordinate: coordinate)
         } else {
@@ -88,9 +88,9 @@ class AssignLocationViewController: UIViewController {
             return popup(title: "Ops", message: "Informe um nome para o local")
         }
 
-        match.location = name
-        match.x = ann.coordinate.latitude
-        match.y = ann.coordinate.longitude
+        activity.location = name
+        activity.x = ann.coordinate.latitude
+        activity.y = ann.coordinate.longitude
 
         performSegue(withIdentifier: "unwindCreateActivity", sender: nil)
     }

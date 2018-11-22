@@ -34,8 +34,8 @@ class HomeViewController: UIViewController {
 
         case "gotoShowActivity":
             guard let vc = segue.destination as? ShowActivityViewController else { return }
-            guard let match = sender as? Activity else { return }
-            vc.match = match
+            guard let activity = sender as? Activity else { return }
+            vc.activity = activity
             return
 
         case .none, .some(_):
@@ -46,11 +46,11 @@ class HomeViewController: UIViewController {
     // MARK: - functions
 
     func getActivities() {
-        ActivityService.get { (matches) in
+        ActivityService.get { (activities) in
             var annotations: [Annotation] = []
-            for match in matches {
-                guard let x = match.x, let y = match.y else { continue }
-                let annotation = Annotation(match, x: CLLocationDegrees(x), y: CLLocationDegrees(y))
+            for activity in activities {
+                guard let x = activity.x, let y = activity.y else { continue }
+                let annotation = Annotation(activity, x: CLLocationDegrees(x), y: CLLocationDegrees(y))
                 annotations.append(annotation)
             }
             self.map.addAnnotations(annotations)
@@ -80,19 +80,19 @@ extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotation = view.annotation as? Annotation else { return }
-        let match = annotation.match
-        performSegue(withIdentifier: "gotoShowActivity", sender: match)
+        let activity = annotation.activity
+        performSegue(withIdentifier: "gotoShowActivity", sender: activity)
     }
 
 }
 
 class Annotation: NSObject, MKAnnotation {
 
-    var match: Activity
+    var activity: Activity
     var coordinate: CLLocationCoordinate2D
 
     init(_ data: Activity, x: CLLocationDegrees, y: CLLocationDegrees) {
-        match = data
+        activity = data
         coordinate = CLLocationCoordinate2D(latitude: x, longitude: y)
     }
 
