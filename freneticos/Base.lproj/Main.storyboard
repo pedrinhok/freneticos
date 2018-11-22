@@ -429,24 +429,24 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="8fD-ka-re5"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-u9-eIa">
                             <connections>
-                                <action selector="gotoNewMatch:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
+                                <action selector="gotoNewActivity:" destination="Yb7-5x-dQs" id="59K-Lh-tZ9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="map" destination="P5f-AB-4CJ" id="oAd-9V-k75"/>
-                        <segue destination="1BE-uc-vcf" kind="show" identifier="gotoNewMatch" id="tej-kA-OWl"/>
-                        <segue destination="saC-3v-pVx" kind="show" identifier="gotoShowMatch" id="8KV-SI-wIu"/>
+                        <segue destination="1BE-uc-vcf" kind="show" identifier="gotoNewActivity" id="tej-kA-OWl"/>
+                        <segue destination="saC-3v-pVx" kind="show" identifier="gotoShowActivity" id="8KV-SI-wIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA0-wh-s3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="683" y="2748"/>
         </scene>
-        <!--Create Match-->
+        <!--Create Activity-->
         <scene sceneID="K9i-NZ-sga">
             <objects>
-                <viewController title="Create Match" id="1BE-uc-vcf" customClass="CreateActivityViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Create Activity" id="1BE-uc-vcf" customClass="CreateActivityViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Tw-fp-Uhh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -952,7 +952,7 @@
                         <outlet property="map" destination="3An-Zu-8YQ" id="Rgn-uT-OPP"/>
                         <outlet property="name" destination="I7D-kt-Fj8" id="szR-bV-8sL"/>
                         <outlet property="placemark" destination="f1B-sH-EA1" id="27n-wc-xvh"/>
-                        <segue destination="Arv-Fr-jKC" kind="unwind" identifier="unwindCreateMatch" unwindAction="unwindCreateMatchWithSegue:" id="LSy-Vu-Oip"/>
+                        <segue destination="Arv-Fr-jKC" kind="unwind" identifier="unwindCreateActivity" unwindAction="unwindCreateActivityWithSegue:" id="LSy-Vu-Oip"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F24-ff-suQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1089,7 +1089,7 @@
                         <outlet property="moment" destination="gIN-Vw-O6C" id="7Zo-ls-Uil"/>
                         <outlet property="momentKeyboard" destination="HCG-xt-ehf" id="pva-P3-JtN"/>
                         <outlet property="momentSelector" destination="KN3-DR-PR5" id="FhG-cU-pA2"/>
-                        <segue destination="jjN-zr-suS" kind="unwind" identifier="unwindCreateMatch" unwindAction="unwindCreateMatchWithSegue:" id="s5N-6S-FCh"/>
+                        <segue destination="jjN-zr-suS" kind="unwind" identifier="unwindCreateActivity" unwindAction="unwindCreateActivityWithSegue:" id="s5N-6S-FCh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tll-0l-0oc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1200,10 +1200,10 @@
             </objects>
             <point key="canvasLocation" x="70" y="4856"/>
         </scene>
-        <!--My Matches-->
+        <!--My Activities-->
         <scene sceneID="yiy-gu-sWw">
             <objects>
-                <viewController title="My Matches" id="zFr-hQ-2q6" customClass="MyActivitiesViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Activities" id="zFr-hQ-2q6" customClass="MyActivitiesViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrS-ff-13z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1271,10 +1271,10 @@
             </objects>
             <point key="canvasLocation" x="682.5" y="1887.6760563380283"/>
         </scene>
-        <!--Show Match-->
+        <!--Show Activity-->
         <scene sceneID="6Yv-gb-3M9">
             <objects>
-                <viewController title="Show Match" id="saC-3v-pVx" customClass="ShowActivityViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Show Activity" id="saC-3v-pVx" customClass="ShowActivityViewController" customModule="freneticos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vis-z5-Mk6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="630"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

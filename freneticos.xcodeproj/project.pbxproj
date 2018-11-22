@@ -17,7 +17,7 @@
 		E96DCFF52106A58600E58377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96DCFF42106A58600E58377 /* GoogleService-Info.plist */; };
 		E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Activity.swift */; };
 		E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992AE642106670A00AFB90F /* HomeViewController.swift */; };
-		E99722CE210BB248008065B7 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99722CD210BB248008065B7 /* MatchService.swift */; };
+		E99722CE210BB248008065B7 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99722CD210BB248008065B7 /* ActivityService.swift */; };
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
 		E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2221063B5A0058F4CC /* StandardButton.swift */; };
 		E9AC4F2521063C780058F4CC /* StandardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2421063C780058F4CC /* StandardView.swift */; };
@@ -50,7 +50,7 @@
 		E96DCFF42106A58600E58377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E980B12E2109FE7D00A05F34 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E992AE642106670A00AFB90F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E99722CD210BB248008065B7 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
+		E99722CD210BB248008065B7 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
 		E9AC4F2221063B5A0058F4CC /* StandardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		E9AC4F2421063C780058F4CC /* StandardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardView.swift; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E2978621061AF400182BCA /* UserService.swift */,
-				E99722CD210BB248008065B7 /* MatchService.swift */,
+				E99722CD210BB248008065B7 /* ActivityService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 				E93746B5210A307F009A3769 /* AssignLocationViewController.swift in Sources */,
 				E9CF442D2197449A009224DA /* ShowActivityViewController.swift in Sources */,
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
-				E99722CE210BB248008065B7 /* MatchService.swift in Sources */,
+				E99722CE210BB248008065B7 /* ActivityService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
 				E91FEF692107FCB900618F15 /* CreateActivityViewController.swift in Sources */,

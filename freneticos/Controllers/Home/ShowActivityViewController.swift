@@ -68,7 +68,7 @@ class ShowActivityViewController: UIViewController {
         
         let user = UserService.getCurrent()!
         
-        MatchService.subscribe(match: match, user: user) { (error) in
+        ActivityService.subscribe(match: match, user: user) { (error) in
             if error != nil {
                 self.popup(title: "Ops", message: "Ocorreu um erro, tente novamente")
             } else {

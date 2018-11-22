@@ -1,7 +1,7 @@
 import Foundation
 import Firebase
 
-class MatchService {
+class ActivityService {
     
     private static let db = Firestore.firestore()
     
