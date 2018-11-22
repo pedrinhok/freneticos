@@ -7,7 +7,7 @@ class SetLocationViewController: UIViewController {
     
     var locationManager = CLLocationManager()
     var geocoder = CLGeocoder()
-    var match: Match!
+    var match: Activity!
     var ann: MKPointAnnotation?
     
     // MARK: - outlets

@@ -7,7 +7,7 @@ class ShowMatchViewController: UIViewController {
     
     let geocoder = CLGeocoder()
     let user = UserService.getCurrent()!
-    var match: Match!
+    var match: Activity!
     
     // MARK: - outlets
     
@@ -29,9 +29,9 @@ class ShowMatchViewController: UIViewController {
         desc.text = match.desc
         sport.text = match.sport
         location.text = match.location
-        schedule.text = match.moment
+        schedule.text = match.datetime
         positions.text = "\(match.positions!)"
-        price.text = match.price
+        price.text = match.expense
         
         setPlacemark()
     }

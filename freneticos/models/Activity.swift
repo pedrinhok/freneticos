@@ -1,6 +1,6 @@
 import Foundation
 
-class Match: Codable {
+class Activity: Codable {
     
     var ref: String?
     var refCreator: String?
@@ -10,10 +10,10 @@ class Match: Codable {
     var location: String?
     var x: Double?
     var y: Double?
-    var moment: String?
+    var datetime: String?
     var duration: Int?
     var positions: Int?
-    var price: String?
+    var expense: String?
     var subscribers: [String: Int]?
     
     func durationString() -> String? {

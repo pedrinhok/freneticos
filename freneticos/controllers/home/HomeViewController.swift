@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
             
         case "gotoShowMatch":
             guard let vc = segue.destination as? ShowMatchViewController else { return }
-            guard let match = sender as? Match else { return }
+            guard let match = sender as? Activity else { return }
             vc.match = match
             return
             
@@ -88,10 +88,10 @@ extension HomeViewController: CLLocationManagerDelegate, MKMapViewDelegate {
 
 class Annotation: NSObject, MKAnnotation {
     
-    var match: Match
+    var match: Activity
     var coordinate: CLLocationCoordinate2D
     
-    init(_ data: Match, x: CLLocationDegrees, y: CLLocationDegrees) {
+    init(_ data: Activity, x: CLLocationDegrees, y: CLLocationDegrees) {
         match = data
         coordinate = CLLocationCoordinate2D(latitude: x, longitude: y)
     }

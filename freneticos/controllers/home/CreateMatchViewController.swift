@@ -4,7 +4,7 @@ class CreateMatchViewController: UIViewController {
     
     // MARK: - properties
     
-    var match: Match = Match()
+    var match: Activity = Activity()
     var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Futebol", "Futebol americano", "Ginástica", "Golfe", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
     
     // MARK: - outlets
@@ -46,7 +46,7 @@ class CreateMatchViewController: UIViewController {
         if let location = match.location {
             buttonLocation.setTitle(location, for: .normal)
         }
-        if let moment = match.moment {
+        if let moment = match.datetime {
             buttonSchedule.setTitle("\(moment)", for: .normal)
         }
     }
@@ -107,7 +107,7 @@ class CreateMatchViewController: UIViewController {
             sender.active()
             return popup(title: "Ops", message: "Informe o local")
         }
-        if match.moment == nil, match.duration == nil  {
+        if match.datetime == nil, match.duration == nil  {
             sender.active()
             return popup(title: "Ops", message: "Informe a data e o horário")
         }
@@ -126,7 +126,7 @@ class CreateMatchViewController: UIViewController {
         
         match.sport = sport
         match.positions = Int(positions)
-        match.price = price
+        match.expense = price
         match.name = name
         match.desc = desc.text
         

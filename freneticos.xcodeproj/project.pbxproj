@@ -15,7 +15,7 @@
 		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
 		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
 		E96DCFF52106A58600E58377 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96DCFF42106A58600E58377 /* GoogleService-Info.plist */; };
-		E980B12F2109FE7D00A05F34 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Match.swift */; };
+		E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980B12E2109FE7D00A05F34 /* Activity.swift */; };
 		E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E992AE642106670A00AFB90F /* HomeViewController.swift */; };
 		E99722CE210BB248008065B7 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99722CD210BB248008065B7 /* MatchService.swift */; };
 		E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4F2021063B070058F4CC /* StandardTextField.swift */; };
@@ -48,7 +48,7 @@
 		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
 		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E96DCFF42106A58600E58377 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E980B12E2109FE7D00A05F34 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		E980B12E2109FE7D00A05F34 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		E992AE642106670A00AFB90F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E99722CD210BB248008065B7 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
 		E9AC4F2021063B070058F4CC /* StandardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextField.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E9B3A021210783CB00E44AC4 /* User.swift */,
-				E980B12E2109FE7D00A05F34 /* Match.swift */,
+				E980B12E2109FE7D00A05F34 /* Activity.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				E9AC4F2121063B070058F4CC /* StandardTextField.swift in Sources */,
 				E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */,
 				E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */,
-				E980B12F2109FE7D00A05F34 /* Match.swift in Sources */,
+				E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */,
 				E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */,
 				E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */,
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,

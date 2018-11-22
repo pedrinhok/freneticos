@@ -5,7 +5,7 @@ class SetScheduleViewController: UIViewController {
     // MARK: - properties
     
     let formatter = DateFormatter()
-    var match: Match!
+    var match: Activity!
     var duration: Int?
     
     // MARK: - outlets
@@ -22,7 +22,7 @@ class SetScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        moment.text = match.moment
+        moment.text = match.datetime
         durationString.text = match.durationString()
         duration = match.duration
         
@@ -37,7 +37,7 @@ class SetScheduleViewController: UIViewController {
         
         momentSelector.minimumDate = Date()
         
-        if let moment = match.moment {
+        if let moment = match.datetime {
             formatter.dateFormat = "dd/MM/yyyy HH:mm"
             momentSelector.date = formatter.date(from: moment)!
         }
@@ -70,7 +70,7 @@ class SetScheduleViewController: UIViewController {
             return popup(title: "Ops", message: "Informe a duração")
         }
         
-        match.moment = moment
+        match.datetime = moment
         match.duration = duration
         
         performSegue(withIdentifier: "unwindCreateMatch", sender: nil)
