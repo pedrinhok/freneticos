@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class ShowMatchViewController: UIViewController {
+class ShowActivityViewController: UIViewController {
     
     // MARK: - properties
     

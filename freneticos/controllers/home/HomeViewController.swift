@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
         switch segue.identifier {
             
         case "gotoShowMatch":
-            guard let vc = segue.destination as? ShowMatchViewController else { return }
+            guard let vc = segue.destination as? ShowActivityViewController else { return }
             guard let match = sender as? Activity else { return }
             vc.match = match
             return

@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class SetLocationViewController: UIViewController {
+class AssignLocationViewController: UIViewController {
     
     // MARK: - properties
     
@@ -116,7 +116,7 @@ class SetLocationViewController: UIViewController {
     
 }
 
-extension SetLocationViewController: UITextFieldDelegate {
+extension AssignLocationViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // drop keyboard on click return

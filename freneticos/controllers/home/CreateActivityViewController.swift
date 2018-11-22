@@ -1,6 +1,6 @@
 import UIKit
 
-class CreateMatchViewController: UIViewController {
+class CreateActivityViewController: UIViewController {
     
     // MARK: - properties
     
@@ -55,12 +55,12 @@ class CreateMatchViewController: UIViewController {
         switch segue.identifier {
             
         case "gotoSetLocation":
-            guard let vc = segue.destination as? SetLocationViewController else { return }
+            guard let vc = segue.destination as? AssignLocationViewController else { return }
             vc.match = match
             return
             
         case "gotoSetSchedule":
-            guard let vc = segue.destination as? SetScheduleViewController else { return }
+            guard let vc = segue.destination as? AssignScheduleViewController else { return }
             vc.match = match
             return
             
@@ -166,7 +166,7 @@ class CreateMatchViewController: UIViewController {
     
 }
 
-extension CreateMatchViewController: UITextFieldDelegate {
+extension CreateActivityViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // drop keyboard on click return
@@ -176,7 +176,7 @@ extension CreateMatchViewController: UITextFieldDelegate {
     
 }
 
-extension CreateMatchViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension CreateActivityViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

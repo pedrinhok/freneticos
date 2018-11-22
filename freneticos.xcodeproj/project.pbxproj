@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A70422A6F63F83E6E68D59B /* Pods_freneticos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23530813664B76F55C220BEE /* Pods_freneticos.framework */; };
-		E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */; };
-		E9321813210B3DF500448E66 /* SetScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9321812210B3DF500448E66 /* SetScheduleViewController.swift */; };
-		E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746B4210A307F009A3769 /* SetLocationViewController.swift */; };
+		E91FEF692107FCB900618F15 /* CreateActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FEF682107FCB900618F15 /* CreateActivityViewController.swift */; };
+		E9321813210B3DF500448E66 /* AssignScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */; };
+		E93746B5210A307F009A3769 /* AssignLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746B4210A307F009A3769 /* AssignLocationViewController.swift */; };
 		E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC42106A1C20085C83E /* ProfileViewController.swift */; };
 		E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */; };
 		E962757C210A02400006E6D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962757B210A02400006E6D4 /* CustomButton.swift */; };
@@ -31,7 +31,7 @@
 		E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9C74DC7210613CD00EF770E /* freneticos.xcdatamodeld */; };
 		E9C74DCB210613CE00EF770E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCA210613CE00EF770E /* Assets.xcassets */; };
 		E9C74DCE210613CE00EF770E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C74DCC210613CE00EF770E /* LaunchScreen.storyboard */; };
-		E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF442C2197449A009224DA /* ShowMatchViewController.swift */; };
+		E9CF442D2197449A009224DA /* ShowActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF442C2197449A009224DA /* ShowActivityViewController.swift */; };
 		E9E07912210BC7B600D2A7FD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */; };
 		E9E297842106199F00182BCA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E297832106199F00182BCA /* SigninViewController.swift */; };
 		E9E2978721061AF400182BCA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2978621061AF400182BCA /* UserService.swift */; };
@@ -41,9 +41,9 @@
 		23530813664B76F55C220BEE /* Pods_freneticos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freneticos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52918835A8828D8E2521BBF4 /* Pods-freneticos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.debug.xcconfig"; sourceTree = "<group>"; };
 		7D07950EC52E32CFCDAE9D26 /* Pods-freneticos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freneticos.release.xcconfig"; path = "Pods/Target Support Files/Pods-freneticos/Pods-freneticos.release.xcconfig"; sourceTree = "<group>"; };
-		E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
-		E9321812210B3DF500448E66 /* SetScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetScheduleViewController.swift; sourceTree = "<group>"; };
-		E93746B4210A307F009A3769 /* SetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
+		E91FEF682107FCB900618F15 /* CreateActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateActivityViewController.swift; sourceTree = "<group>"; };
+		E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignScheduleViewController.swift; sourceTree = "<group>"; };
+		E93746B4210A307F009A3769 /* AssignLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignLocationViewController.swift; sourceTree = "<group>"; };
 		E95B5AC42106A1C20085C83E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E95B5AC62106A1ED0085C83E /* MyMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesViewController.swift; sourceTree = "<group>"; };
 		E962757B210A02400006E6D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		E9C74DCA210613CE00EF770E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C74DCD210613CE00EF770E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C74DCF210613CE00EF770E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9CF442C2197449A009224DA /* ShowMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMatchViewController.swift; sourceTree = "<group>"; };
+		E9CF442C2197449A009224DA /* ShowActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowActivityViewController.swift; sourceTree = "<group>"; };
 		E9E07911210BC7B600D2A7FD /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		E9E297832106199F00182BCA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		E9E2978621061AF400182BCA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -134,10 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				E992AE642106670A00AFB90F /* HomeViewController.swift */,
-				E91FEF682107FCB900618F15 /* CreateMatchViewController.swift */,
-				E93746B4210A307F009A3769 /* SetLocationViewController.swift */,
-				E9321812210B3DF500448E66 /* SetScheduleViewController.swift */,
-				E9CF442C2197449A009224DA /* ShowMatchViewController.swift */,
+				E91FEF682107FCB900618F15 /* CreateActivityViewController.swift */,
+				E93746B4210A307F009A3769 /* AssignLocationViewController.swift */,
+				E9321812210B3DF500448E66 /* AssignScheduleViewController.swift */,
+				E9CF442C2197449A009224DA /* ShowActivityViewController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B3A022210783CB00E44AC4 /* User.swift in Sources */,
-				E9321813210B3DF500448E66 /* SetScheduleViewController.swift in Sources */,
+				E9321813210B3DF500448E66 /* AssignScheduleViewController.swift in Sources */,
 				E962757C210A02400006E6D4 /* CustomButton.swift in Sources */,
 				E9AC4F27210645690058F4CC /* SignupViewController.swift in Sources */,
 				E9AC4F2521063C780058F4CC /* StandardView.swift in Sources */,
@@ -353,13 +353,13 @@
 				E992AE652106670A00AFB90F /* HomeViewController.swift in Sources */,
 				E95B5AC72106A1ED0085C83E /* MyMatchesViewController.swift in Sources */,
 				E980B12F2109FE7D00A05F34 /* Activity.swift in Sources */,
-				E93746B5210A307F009A3769 /* SetLocationViewController.swift in Sources */,
-				E9CF442D2197449A009224DA /* ShowMatchViewController.swift in Sources */,
+				E93746B5210A307F009A3769 /* AssignLocationViewController.swift in Sources */,
+				E9CF442D2197449A009224DA /* ShowActivityViewController.swift in Sources */,
 				E95B5AC52106A1C20085C83E /* ProfileViewController.swift in Sources */,
 				E99722CE210BB248008065B7 /* MatchService.swift in Sources */,
 				E9C74DC3210613CD00EF770E /* ViewController.swift in Sources */,
 				E9C74DC9210613CD00EF770E /* freneticos.xcdatamodeld in Sources */,
-				E91FEF692107FCB900618F15 /* CreateMatchViewController.swift in Sources */,
+				E91FEF692107FCB900618F15 /* CreateActivityViewController.swift in Sources */,
 				E9BB604721090B5E00B990EC /* StandardNavigationBar.swift in Sources */,
 				E9AC4F2321063B5A0058F4CC /* StandardButton.swift in Sources */,
 				E9B038552107F28200B2888A /* StandardTabBar.swift in Sources */,

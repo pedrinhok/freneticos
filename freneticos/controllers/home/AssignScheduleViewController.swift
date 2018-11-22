@@ -1,6 +1,6 @@
 import UIKit
 
-class SetScheduleViewController: UIViewController {
+class AssignScheduleViewController: UIViewController {
     
     // MARK: - properties
     
