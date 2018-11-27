@@ -70,9 +70,11 @@ class ShowMatchViewController: UIViewController {
         
         MatchService.subscribe(match: match, user: user) { (error) in
             if error != nil {
-                self.popup(title: "Ops", message: "Ocorreu um erro, tente novamente")
+                self.popup(title: "Ops", message: "An error has occurred")
             } else {
-                self.popup(title: "Sucesso", message: "A sua inscrição foi realizada com sucesso!")
+                self.popup(title: "Success", message: "You're subscribed to the activity!") {
+                    self.performSegue(withIdentifier: "unwindHome", sender: nil)
+                }
             }
             sender.active()
         }

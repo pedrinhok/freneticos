@@ -1555,9 +1555,11 @@
                         <outlet property="schedule" destination="Dwm-3J-1ps" id="Xho-Y2-adl"/>
                         <outlet property="sport" destination="ZYY-nX-2rI" id="YP4-s9-xnI"/>
                         <outlet property="status" destination="bnC-mj-ijY" id="8TR-G1-Nh5"/>
+                        <segue destination="fhe-sE-y5Q" kind="unwind" identifier="unwindHome" unwindAction="unwindHomeWithSegue:" id="z6N-qU-uFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hC-GN-Z9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fhe-sE-y5Q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="682" y="3718"/>
         </scene>
