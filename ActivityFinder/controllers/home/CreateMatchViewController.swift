@@ -5,7 +5,7 @@ class CreateMatchViewController: UIViewController {
     // MARK: - properties
     
     var match: Match = Match()
-    var sports: [String] = ["Artes marciais", "Atletismo", "Automobilismo", "Basquetebol", "Boliche", "Canoagem", "Ciclismo", "Corrida", "Fisiculturismo", "Futebol", "Futebol americano", "Ginástica", "Golfe", "Handebol", "Hipismo", "Natação", "Padel", "Pólo aquático", "Surfe", "Tênis", "Voleibol"]
+    var sports: [String] = ["American Football", "Athletics", "Auto Racing", "Basketball", "Bodybuilding", "Bowling", "Cycling", "Fight", "Golf", "Gymnastics", "Handball", "Paddle", "Racing", "Soccer", "Surfing", "Tennis", "Volleyball", "Water Polo"]
     
     // MARK: - outlets
     
@@ -101,27 +101,27 @@ class CreateMatchViewController: UIViewController {
         
         guard let sport = sport.text, sport != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Selecione o esporte")
+            return popup(title: "Ops", message: "Select the sport")
         }
         if match.location == nil, match.x == nil, match.y == nil  {
             sender.active()
-            return popup(title: "Ops", message: "Informe o local")
+            return popup(title: "Ops", message: "Inform the location")
         }
         if match.moment == nil, match.duration == nil  {
             sender.active()
-            return popup(title: "Ops", message: "Informe a data e o horário")
+            return popup(title: "Ops", message: "Inform the date and the time")
         }
         guard let positions = positions.text, positions != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe o número de vagas")
+            return popup(title: "Ops", message: "Inform the number of positions available")
         }
         guard let price = price.text, price != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe o preço para cada participante")
+            return popup(title: "Ops", message: "Inform the cost for the participants")
         }
         guard let name = name.text, name != "" else {
             sender.active()
-            return popup(title: "Ops", message: "Informe um nome para a partida")
+            return popup(title: "Ops", message: "Inform the name of the activity")
         }
         
         match.sport = sport

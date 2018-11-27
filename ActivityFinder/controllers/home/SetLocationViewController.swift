@@ -82,10 +82,10 @@ class SetLocationViewController: UIViewController {
     @IBAction func onClickSubmit(_ sender: StandardButton) {
         
         guard let ann = ann else {
-            return popup(title: "Ops", message: "Clique no mapa para selecionar o local")
+            return popup(title: "Ops", message: "Click on the map to select the location")
         }
         guard let name = name.text, name != "" else {
-            return popup(title: "Ops", message: "Informe um nome para o local")
+            return popup(title: "Ops", message: "Inform the name of the location")
         }
         
         match.location = name
